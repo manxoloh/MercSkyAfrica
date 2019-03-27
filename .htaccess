@@ -1,0 +1,32 @@
+        Options +Indexes
+	Order allow,deny
+	Allow from all
+	
+
+	Options +FollowSymlinks
+        RewriteEngine On
+
+	RewriteBase /mercskyafrica
+	#
+        ## deal with admin first
+        RewriteCond %{REQUEST_URI} ^/mercskyafrica/(admin)
+        RewriteRule ^admin/assets/(.*)$ backend/web/assets/$1 [L]
+        RewriteRule ^admin/css/(.*)$ backend/web/css/$1 [L]
+		RewriteRule ^admin/theme/(.*)$ backend/web/theme/$1 [L]
+        RewriteRule ^admin/uploads/(.*)$ backend/web/uploads/$1 [L]
+        #
+        RewriteCond %{REQUEST_URI} !^/mercskyafrica/backend/web/(assets|css|theme|uploads|images)/
+        RewriteCond %{REQUEST_URI} ^/mercskyafrica/(admin)
+        RewriteRule ^.*$ backend/web/index.php [L]
+        #
+        RewriteCond %{REQUEST_URI} ^/mercskyafrica/(assets|css|theme)
+        RewriteRule ^assets/(.*)$ frontend/web/assets/$1 [L]
+        RewriteRule ^css/(.*)$ frontend/web/css/$1 [L]
+        RewriteRule ^theme/(.*)$ frontend/web/theme/$1 [L]
+        #
+        RewriteCond %{REQUEST_URI} !^/mercskyafrica/(frontend|backend)/web/(assets|css|theme|uploads|images)/
+        RewriteCond %{REQUEST_URI} !index.php
+        RewriteCond %{REQUEST_FILENAME} !-f [OR]
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule ^.*$ frontend/web/index.php
+

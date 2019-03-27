@@ -1,0 +1,11 @@
+.form-group .help-block {
+    color: #FB404B;
+    text-transform: none;
+    margin-bottom: 0;
+}
+.toolbar{
+	margin-right: 15px !important;
+}
+.toolbar a{
+	margin-left: 10px !important;
+}
