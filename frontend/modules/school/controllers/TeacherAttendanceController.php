@@ -87,6 +87,14 @@ class TeacherAttendanceController extends Controller
             'model' => $this->findModel($id),
         ]);
     }
+    
+    public function actionAttendanceSheet()
+    {
+        $model = new TeacherAttendance();
+        return $this->render('attendance-sheet', [
+            'model' => $model,
+        ]);
+    }
 
     /**
      * Creates a new TeacherAttendance model.

@@ -33,11 +33,8 @@ AppAsset::register($this);
     -->
             <div class="sidebar-wrapper">
                 <div class="logo">
-                    <a href="<?= Url::to(['/']) ?>" class="simple-text logo-mini">
-                        MA
-                    </a>
                     <a href="<?= Url::to(['/']) ?>" class="simple-text logo-normal">
-                        Merc Sky Africa
+                        <img src="<?= Yii::$app->request->baseUrl; ?>theme/img/mercskyafrica.jpg" style="opacity: 0.2; display: block; margin-left: Auto; margin-right: Auto; height: 65px; width: 95%;"/>
                     </a>
                 </div>
                 <div class="user">

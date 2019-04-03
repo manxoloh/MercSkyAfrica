@@ -23,7 +23,8 @@
         "africastalking/africastalking": "^2.1",
         "moonlandsoft/yii2-phpexcel": "*",
         "phpoffice/phpspreadsheet": "^1.6",
-        "philippfrenzel/yii2fullcalendar": "*"
+        "philippfrenzel/yii2fullcalendar": "*",
+        "phpdocumentor/phpdocumentor": "2.*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

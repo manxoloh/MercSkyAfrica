@@ -1,8 +1,13 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\Url;
+use yii\widgets\ActiveForm;
 use yii\grid\GridView;
 use common\models\TeacherAttendance;
+use common\models\Classes;
+use yii\helpers\ArrayHelper;
+use common\models\Streams;
 
 /* @var $this yii\web\View */
 /* @var $searchModel common\models\TeacherAttendanceSearch */
@@ -12,6 +17,25 @@ $this->title = 'Teacher Attendances';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
+<div class="row">
+    <div class="col-md-12">
+        <span class="pull-right">
+        
+            <table>
+            <?php $form = ActiveForm::begin(); ?>
+            <tr>
+            	<td>
+            		<a class="btn btn-success details" href="<?= Url::to(['/school/teacher-attendance/attendace-sheet']) ?>">Attendance Sheet</a>
+        		</td>
+                <td>
+                	<?= $form->field(new TeacherAttendance(), 'date')->textInput(['type'=>'date'])->label(false) ?>
+                </td>
+            </tr>
+            <?php ActiveForm::end(); ?>            
+            </table>
+        </span>
+    </div>
+</div>
 <div class="row">
     <div class="col-md-12">
         <div class="card data-tables">

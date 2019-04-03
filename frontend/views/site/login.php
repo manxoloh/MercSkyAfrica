@@ -14,17 +14,17 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="col-md-4 col-sm-6 ml-auto mr-auto">
 	<div class="card card-login">
         <div class="card-header ">
-            <h3 class="header text-center">Login</h3>
+        	<img src="<?= Yii::$app->request->baseUrl; ?>theme/img/mercskyafrica.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
         </div>
         <div class="card-body ">
             <div class="card-body">
                 <div class="form-group">
                     <label>Username</label>
-                    <?= $form->field($model, 'username')->textInput(['placeholder'=>'Username'])->label(false) ?>
+                    <?= $form->field($model, 'username')->textInput(['placeholder'=>true])->label(false) ?>
                 </div>
                 <div class="form-group">
                     <label>Password</label>
-                    <?= $form->field($model, 'password')->passwordInput(['placeholder'=>'Password'])->label(false) ?>
+                    <?= $form->field($model, 'password')->passwordInput(['placeholder'=>true])->label(false) ?>
                 </div>
                 <div class="form-group">                    
                     <span> <?= Html::a('Reset your password', ['site/request-password-reset']) ?></span>

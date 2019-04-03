@@ -1,10 +1,13 @@
 <?php
 
 use common\models\Classes;
+use common\models\Streams;
 use common\models\StudentSubjects;
 use common\models\Subjects;
+use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Url;
+use yii\widgets\ActiveForm;
 use yii\grid\GridView;
 use common\models\StudentAttendance;
 
@@ -18,11 +21,24 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="row">
     <div class="col-md-12">
         <span class="pull-right">
-            <?php foreach (Classes::find()->all() as $class) { ?>
-            <a class="btn btn-info" href="<?= Url::to(['/school/student-attendance', 'class_id'=>$class['class_id']]) ?>">
-            <?= $class['class_name'] ?>
-            </a>
-        	<?php } ?>
+        <table>
+            <?php $form = ActiveForm::begin(); ?>
+            <tr>
+                <td>
+                	<?= $form->field(new Classes(), 'class_id')->dropDownList(ArrayHelper::map(Classes::find()->all(), 'class_id', 'class_name'), [
+                    	    'onchange'=>'
+                                            $.post("stream?class='.'"+$(this).val(), function(data){
+                                            $("select#streams-stream_id").html(data);
+                                        });'
+                    	])->label(false) ?>
+                	</td><td>
+                	<?= $form->field(new Streams(), 'stream_id')->dropDownList(ArrayHelper::map(Streams::find()->all(), 'stream_id', 'stream_name'))->label(false) ?>
+                	</td><td>
+                	<?= $form->field(new StudentAttendance(), 'date')->textInput(['type'=>'date'])->label(false) ?>
+                </td>
+            </tr>
+            <?php ActiveForm::end(); ?>            
+            </table>
         </span>
     </div>
 </div>

@@ -20439,3 +20439,1032 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1553679834.261
     'REQUEST_TIME' => 1553679834
 ]
+2019-04-01 13:27:06 [::1][-][-][error][yii\base\ErrorException:256] yii\base\ErrorException: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'The directory does not exist: /var/www/html/mercskyafrica/frontend/web/assets' 
+
+in /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/AssetManager.php:213
+
+Stack trace:
+#0 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\BaseObject->__construct(Array)
+#2 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/di/Container.php(376): ReflectionClass->newInstanceArgs(Array)
+#3 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#6 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('assetManager', true)
+#7 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Application.php(608): yii\base\Module->get('assetManager')
+#8 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/View.php(225): yii\base\Application->getAssetManager()
+#9 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/View.php(285): yii\web\View->getAssetManager()
+#10 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/AssetBundle.php(125): yii\web\View->registerAssetBundle('yii\\validators\\...')
+#11 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/validators/RequiredValidator.php(91): yii\web\AssetBundle::register(Object(yii\web\View))
+#12 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/widgets/ActiveField.php(820): yii\validators\RequiredValidator->clientValidateAttribute(Object(common\models\LoginForm), 'username', Object(yii\web\View))
+#13 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/widgets/ActiveField.php(230): yii\widgets\ActiveField->getClientOptions()
+#14 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/widgets/ActiveField.php(220): yii\widgets\ActiveField->begin()
+#15 /var/www/html/mercskyafrica/vendor/yiisoft/yii2-bootstrap/src/ActiveField.php(187): yii\widgets\ActiveField->render('\n<input type="t...')
+#16 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/widgets/ActiveField.php(176): yii\bootstrap\ActiveField->render()
+#17 /var/www/html/mercskyafrica/frontend/views/site/login.php(23): yii\widgets\ActiveField->__toString()
+#18 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/m...')
+#19 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/m...', Array)
+#20 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/m...', Array, Object(frontend\controllers\SiteController))
+#21 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('login', Array, Object(frontend\controllers\SiteController))
+#22 /var/www/html/mercskyafrica/frontend/controllers/SiteController.php(119): yii\base\Controller->render('login', Array)
+#23 [internal function]: frontend\controllers\SiteController->actionLogin()
+#24 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#25 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#26 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#27 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/login', Array)
+#28 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 /var/www/html/mercskyafrica/frontend/web/index.php(17): yii\base\Application->run()
+#30 {main} in /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/ErrorHandler.php:317
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(256, 'Exception (Inva...', '/var/www/html/m...', 317, Array)
+#1 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/ErrorHandler.php(317): trigger_error('Exception (Inva...', 256)
+#2 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/widgets/ActiveField.php(178): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\InvalidConfigException))
+#3 /var/www/html/mercskyafrica/frontend/views/site/login.php(23): yii\widgets\ActiveField->__toString()
+#4 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/m...')
+#5 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/m...', '[<span class="s...')
+#6 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/m...', Array, Object(frontend\controllers\SiteController))
+#7 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('login', Array, Object(frontend\controllers\SiteController))
+#8 /var/www/html/mercskyafrica/frontend/controllers/SiteController.php(119): yii\base\Controller->render('login', Array)
+#9 [internal function]: frontend\controllers\SiteController->actionLogin()
+#10 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#13 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/login', Array)
+#14 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /var/www/html/mercskyafrica/frontend/web/index.php(17): yii\base\Application->run()
+#16 {main}
+    in /var/www/html/mercskyafrica/frontend/views/site/login.php:23
+    in /var/www/html/mercskyafrica/frontend/controllers/SiteController.php:119
+2019-04-01 13:27:06 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'XKIRqpPC-0neGVTgCHyqAQAAAAM'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'XKIRqpPC-0neGVTgCHyqAQAAAAM'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.6 (CentOS) PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '44438'
+    'REDIRECT_URL' => '/mercskyafrica/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mercskyafrica/site/login'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1554125226.856
+    'REQUEST_TIME' => 1554125226
+]
+2019-04-01 13:28:05 [::1][-][5f86aabakho0bqoou3vp0s86g5][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Command.php(1153): yii\db\Command->prepare(true)
+#6 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/mysql/Schema.php(319): yii\db\Command->queryAll()
+#8 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('user')
+#10 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%user}}', 'schema', false)
+#11 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/ActiveRecord.php(390): yii\db\Schema->getTableSchema('{{%user}}')
+#12 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/ActiveRecord.php(216): yii\db\ActiveRecord::getTableSchema()
+#13 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#14 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#15 /var/www/html/mercskyafrica/common/models/User.php(83): yii\db\BaseActiveRecord::findOne(Array)
+#16 /var/www/html/mercskyafrica/common/models/LoginForm.php(73): common\models\User::findByUsername('root')
+#17 /var/www/html/mercskyafrica/common/models/LoginForm.php(44): common\models\LoginForm->getUser()
+#18 [internal function]: common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#19 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/validators/InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#20 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/validators/Validator.php(257): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#21 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#22 /var/www/html/mercskyafrica/common/models/LoginForm.php(58): yii\base\Model->validate()
+#23 /var/www/html/mercskyafrica/frontend/controllers/SiteController.php(112): common\models\LoginForm->login()
+#24 [internal function]: frontend\controllers\SiteController->actionLogin()
+#25 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#26 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#27 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#28 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/login', Array)
+#29 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#30 /var/www/html/mercskyafrica/frontend/web/index.php(17): yii\base\Application->run()
+#31 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Command.php(1153): yii\db\Command->prepare(true)
+#4 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/mysql/Schema.php(319): yii\db\Command->queryAll()
+#6 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('user')
+#8 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%user}}', 'schema', false)
+#9 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/ActiveRecord.php(390): yii\db\Schema->getTableSchema('{{%user}}')
+#10 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/ActiveRecord.php(216): yii\db\ActiveRecord::getTableSchema()
+#11 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#12 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#13 /var/www/html/mercskyafrica/common/models/User.php(83): yii\db\BaseActiveRecord::findOne(Array)
+#14 /var/www/html/mercskyafrica/common/models/LoginForm.php(73): common\models\User::findByUsername('root')
+#15 /var/www/html/mercskyafrica/common/models/LoginForm.php(44): common\models\LoginForm->getUser()
+#16 [internal function]: common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#17 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/validators/InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#18 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/validators/Validator.php(257): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#19 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#20 /var/www/html/mercskyafrica/common/models/LoginForm.php(58): yii\base\Model->validate()
+#21 /var/www/html/mercskyafrica/frontend/controllers/SiteController.php(112): common\models\LoginForm->login()
+#22 [internal function]: frontend\controllers\SiteController->actionLogin()
+#23 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#24 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#25 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#26 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/login', Array)
+#27 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 /var/www/html/mercskyafrica/frontend/web/index.php(17): yii\base\Application->run()
+#29 {main}
+Additional Information:
+
+2019-04-01 13:28:05 [::1][-][5f86aabakho0bqoou3vp0s86g5][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'PrG49_bcttO4ObEK4FCZ614LJtylx1zETMe1nkP9Wz1w1cy-tO_9vfBUiXCoPeqOEGpSiJa-H7MPper0MpEeUA=='
+    'LoginForm' => [
+        'username' => 'root'
+        'password' => 'Letmein123!'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '5f86aabakho0bqoou3vp0s86g5'
+    '_csrf-frontend' => '4b1ce4f662c037377c7351609c4de59c908e030fd32407052edf98f2748f786fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"NdtIB3KnHm8zHmseNatT3yCwCb_jqlEm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'XKIR5ZUGVjUHKPi4kC7jPwAAAAI'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'XKIR5ZUGVjUHKPi4kC7jPwAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/mercskyafrica/site/login'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '189'
+    'HTTP_COOKIE' => 'advanced-frontend=5f86aabakho0bqoou3vp0s86g5; _csrf-frontend=4b1ce4f662c037377c7351609c4de59c908e030fd32407052edf98f2748f786fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22NdtIB3KnHm8zHmseNatT3yCwCb_jqlEm%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.6 (CentOS) PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '44464'
+    'REDIRECT_URL' => '/mercskyafrica/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mercskyafrica/site/login'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1554125285.785
+    'REQUEST_TIME' => 1554125285
+]
+2019-04-03 11:14:41 [::1][-][21nq5kvshinift39q460j8ej0g][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Command.php(1153): yii\db\Command->prepare(true)
+#6 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/mysql/Schema.php(319): yii\db\Command->queryAll()
+#8 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('user')
+#10 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%user}}', 'schema', false)
+#11 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/ActiveRecord.php(390): yii\db\Schema->getTableSchema('{{%user}}')
+#12 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/ActiveRecord.php(216): yii\db\ActiveRecord::getTableSchema()
+#13 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#14 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#15 /var/www/html/mercskyafrica/common/models/User.php(83): yii\db\BaseActiveRecord::findOne(Array)
+#16 /var/www/html/mercskyafrica/common/models/LoginForm.php(73): common\models\User::findByUsername('superadmin')
+#17 /var/www/html/mercskyafrica/common/models/LoginForm.php(44): common\models\LoginForm->getUser()
+#18 [internal function]: common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#19 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/validators/InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#20 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/validators/Validator.php(257): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#21 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#22 /var/www/html/mercskyafrica/common/models/LoginForm.php(58): yii\base\Model->validate()
+#23 /var/www/html/mercskyafrica/frontend/controllers/SiteController.php(112): common\models\LoginForm->login()
+#24 [internal function]: frontend\controllers\SiteController->actionLogin()
+#25 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#26 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#27 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#28 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/login', Array)
+#29 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#30 /var/www/html/mercskyafrica/frontend/web/index.php(17): yii\base\Application->run()
+#31 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Command.php(1153): yii\db\Command->prepare(true)
+#4 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/mysql/Schema.php(319): yii\db\Command->queryAll()
+#6 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('user')
+#8 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%user}}', 'schema', false)
+#9 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/ActiveRecord.php(390): yii\db\Schema->getTableSchema('{{%user}}')
+#10 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/ActiveRecord.php(216): yii\db\ActiveRecord::getTableSchema()
+#11 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#12 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#13 /var/www/html/mercskyafrica/common/models/User.php(83): yii\db\BaseActiveRecord::findOne(Array)
+#14 /var/www/html/mercskyafrica/common/models/LoginForm.php(73): common\models\User::findByUsername('superadmin')
+#15 /var/www/html/mercskyafrica/common/models/LoginForm.php(44): common\models\LoginForm->getUser()
+#16 [internal function]: common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#17 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/validators/InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#18 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/validators/Validator.php(257): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#19 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#20 /var/www/html/mercskyafrica/common/models/LoginForm.php(58): yii\base\Model->validate()
+#21 /var/www/html/mercskyafrica/frontend/controllers/SiteController.php(112): common\models\LoginForm->login()
+#22 [internal function]: frontend\controllers\SiteController->actionLogin()
+#23 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#24 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#25 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#26 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/login', Array)
+#27 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 /var/www/html/mercskyafrica/frontend/web/index.php(17): yii\base\Application->run()
+#29 {main}
+Additional Information:
+
+2019-04-03 11:14:41 [::1][-][21nq5kvshinift39q460j8ej0g][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'Rz7jVBErWlPpOxDL4AsxBsbnwpEcLrpHMAtLnOY8cgQJcZQLe1MAFt5TV52EM100nLiR-HRs0QxhQx7Kgm9EVw=='
+    'LoginForm' => [
+        'username' => 'superadmin'
+        'password' => '1234567890'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '21nq5kvshinift39q460j8ej0g'
+    '_csrf-frontend' => 'bd9ddb14eb417976fcced60afa2f078d4e8d23254c6e1c50760b66d81172e32ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"NOw_jxZE7hGVd8l2Z_SihBkKQHUVdS6S\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'XKSVoR14gqtxr2jIi@VQ-wAAAA0'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'XKSVoR14gqtxr2jIi@VQ-wAAAA0'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/mercskyafrica/site/login'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '192'
+    'HTTP_COOKIE' => 'advanced-frontend=21nq5kvshinift39q460j8ej0g; _csrf-frontend=bd9ddb14eb417976fcced60afa2f078d4e8d23254c6e1c50760b66d81172e32ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22NOw_jxZE7hGVd8l2Z_SihBkKQHUVdS6S%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.6 (CentOS) PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '46446'
+    'REDIRECT_URL' => '/mercskyafrica/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mercskyafrica/site/login'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1554290081.052
+    'REQUEST_TIME' => 1554290081
+]
+2019-04-03 11:19:38 [::1][-][21nq5kvshinift39q460j8ej0g][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Unable to verify your data submission. in /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#2 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#3 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /var/www/html/mercskyafrica/frontend/web/index.php(17): yii\base\Application->run()
+#5 {main}
+2019-04-03 11:19:38 [::1][-][21nq5kvshinift39q460j8ej0g][info][application] $_GET = []
+
+$_POST = [
+    'noplugin' => '5ca495f581fc6'
+    'db' => 'mercskyafrica'
+    'token' => ']T8&xcvr[4?\\h.H='
+    'import_type' => 'database'
+    'MAX_FILE_SIZE' => '2097152'
+    'charset_of_file' => 'utf-8'
+    'allow_interrupt' => 'yes'
+    'skip_queries' => '0'
+    'fk_checks' => '1'
+    'format' => 'sql'
+    'csv_terminated' => ','
+    'csv_enclosed' => '\"'
+    'csv_escaped' => '\"'
+    'csv_new_line' => 'auto'
+    'ods_empty_rows' => 'something'
+    'ods_recognize_percentages' => 'something'
+    'ods_recognize_currency' => 'something'
+    'sql_compatibility' => 'NONE'
+    'sql_no_auto_value_on_zero' => 'something'
+]
+
+$_FILES = [
+    'import_file' => [
+        'name' => 'mercskyafrica.sql'
+        'type' => 'application/sql'
+        'tmp_name' => '/tmp/phpeaQNcy'
+        'error' => 0
+        'size' => 28491
+    ]
+]
+
+$_COOKIE = [
+    'phpMyAdmin' => '4qhb1thq8kg7cgcavs1gn99fk8'
+    'pma_lang' => 'en'
+    'pmaUser-1' => '{\"iv\":\"iWUpJiN1RLbe+WnJNIOAMg==\",\"mac\":\"91f5f9319c12ad08631cdc6a802d8e755eeb8e71\",\"payload\":\"uX13E7SaviKOagK0c8QdSQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"mXlsawPlg2W3UeXqcg2t7w==\",\"mac\":\"cedf7d6853135a7be8c211d17a372724681c9ef7\",\"payload\":\"+cPhP0GeSBe5+HmTsiIelnYbzEymfpRStNOBGfu\\/Y2A=\"}'
+    'advanced-frontend' => '21nq5kvshinift39q460j8ej0g'
+    '_csrf-frontend' => 'bd9ddb14eb417976fcced60afa2f078d4e8d23254c6e1c50760b66d81172e32ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"NOw_jxZE7hGVd8l2Z_SihBkKQHUVdS6S\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'XKSWyqa9shcPx3DaDsMBFQAAAAg'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'XKSWyqa9shcPx3DaDsMBFQAAAAg'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------113822310112740381021407946569'
+    'CONTENT_LENGTH' => '31227'
+    'HTTP_COOKIE' => 'phpMyAdmin=4qhb1thq8kg7cgcavs1gn99fk8; pma_lang=en; pmaUser-1=%7B%22iv%22%3A%22iWUpJiN1RLbe%2BWnJNIOAMg%3D%3D%22%2C%22mac%22%3A%2291f5f9319c12ad08631cdc6a802d8e755eeb8e71%22%2C%22payload%22%3A%22uX13E7SaviKOagK0c8QdSQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22mXlsawPlg2W3UeXqcg2t7w%3D%3D%22%2C%22mac%22%3A%22cedf7d6853135a7be8c211d17a372724681c9ef7%22%2C%22payload%22%3A%22%2BcPhP0GeSBe5%2BHmTsiIelnYbzEymfpRStNOBGfu%5C%2FY2A%3D%22%7D; advanced-frontend=21nq5kvshinift39q460j8ej0g; _csrf-frontend=bd9ddb14eb417976fcced60afa2f078d4e8d23254c6e1c50760b66d81172e32ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22NOw_jxZE7hGVd8l2Z_SihBkKQHUVdS6S%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.6 (CentOS) PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '46532'
+    'REDIRECT_URL' => '/phpMyAdmin/import.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/phpMyAdmin/import.php'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1554290378.101
+    'REQUEST_TIME' => 1554290378
+]
+2019-04-03 11:19:55 [::1][-][21nq5kvshinift39q460j8ej0g][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Unable to verify your data submission. in /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#2 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#3 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /var/www/html/mercskyafrica/frontend/web/index.php(17): yii\base\Application->run()
+#5 {main}
+2019-04-03 11:19:55 [::1][-][21nq5kvshinift39q460j8ej0g][info][application] $_GET = []
+
+$_POST = [
+    'type' => 'config-get'
+    'server' => '1'
+    'key' => 'NavigationWidth'
+    '_nocache' => '1554290395582788418'
+    'token' => ']T8&xcvr[4?\\h.H='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'phpMyAdmin' => '4qhb1thq8kg7cgcavs1gn99fk8'
+    'pma_lang' => 'en'
+    'pmaUser-1' => '{\"iv\":\"JOsaigMNBlfgTFmcK8h1tw==\",\"mac\":\"b3a4d83ba962c8a38c27fd8788b10fbab3362798\",\"payload\":\"BHvaWaCMXRRCN2iHmDu6KA==\"}'
+    'pmaAuth-1' => '{\"iv\":\"YYlvJ2kyHm68ASMzMATCBw==\",\"mac\":\"025bb98a2feb928b63076a72aecd0d1252ced711\",\"payload\":\"Goa9MTlbKR67DK\\/XoRbQSyL2CiUNetQ0mlnXgK5vT0k=\"}'
+    'advanced-frontend' => '21nq5kvshinift39q460j8ej0g'
+    '_csrf-frontend' => '91c469447ab9f5f98ad6ce532fe047d4eabd87c7959e279591ac6ec6c71724d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-GXgY3obXAVbp0uksd75Bqs5GZguC0kF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'XKSW2x4PeZEqQyf6pWVxJQAAAAQ'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'XKSW2x4PeZEqQyf6pWVxJQAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_LENGTH' => '108'
+    'HTTP_COOKIE' => 'phpMyAdmin=4qhb1thq8kg7cgcavs1gn99fk8; pma_lang=en; pmaUser-1=%7B%22iv%22%3A%22JOsaigMNBlfgTFmcK8h1tw%3D%3D%22%2C%22mac%22%3A%22b3a4d83ba962c8a38c27fd8788b10fbab3362798%22%2C%22payload%22%3A%22BHvaWaCMXRRCN2iHmDu6KA%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22YYlvJ2kyHm68ASMzMATCBw%3D%3D%22%2C%22mac%22%3A%22025bb98a2feb928b63076a72aecd0d1252ced711%22%2C%22payload%22%3A%22Goa9MTlbKR67DK%5C%2FXoRbQSyL2CiUNetQ0mlnXgK5vT0k%3D%22%7D; advanced-frontend=21nq5kvshinift39q460j8ej0g; _csrf-frontend=91c469447ab9f5f98ad6ce532fe047d4eabd87c7959e279591ac6ec6c71724d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-GXgY3obXAVbp0uksd75Bqs5GZguC0kF%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.6 (CentOS) PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '46564'
+    'REDIRECT_URL' => '/phpMyAdmin/ajax.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/phpMyAdmin/ajax.php'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1554290395.583
+    'REQUEST_TIME' => 1554290395
+]
+2019-04-03 11:19:55 [::1][-][21nq5kvshinift39q460j8ej0g][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Unable to verify your data submission. in /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#2 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#3 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /var/www/html/mercskyafrica/frontend/web/index.php(17): yii\base\Application->run()
+#5 {main}
+2019-04-03 11:19:55 [::1][-][21nq5kvshinift39q460j8ej0g][info][application] $_GET = [
+    'ajax_request' => '1'
+]
+
+$_POST = [
+    'reload' => 'true'
+    'no_debug' => 'true'
+    'server' => '1'
+    'n0_aPath' => 'cm9vdA==.bWVyY3NreWFmcmljYQ=='
+    'n0_vPath' => 'cm9vdA==.bWVyY3NreWFmcmljYQ=='
+    'n0_pos2_name' => ''
+    'n0_pos2_value' => ''
+    'n0_pos3_name' => ''
+    'n0_pos3_value' => ''
+    '_nocache' => '1554290395768778206'
+    'token' => ']T8&xcvr[4?\\h.H='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'phpMyAdmin' => '4qhb1thq8kg7cgcavs1gn99fk8'
+    'pma_lang' => 'en'
+    'pmaUser-1' => '{\"iv\":\"JOsaigMNBlfgTFmcK8h1tw==\",\"mac\":\"b3a4d83ba962c8a38c27fd8788b10fbab3362798\",\"payload\":\"BHvaWaCMXRRCN2iHmDu6KA==\"}'
+    'pmaAuth-1' => '{\"iv\":\"YYlvJ2kyHm68ASMzMATCBw==\",\"mac\":\"025bb98a2feb928b63076a72aecd0d1252ced711\",\"payload\":\"Goa9MTlbKR67DK\\/XoRbQSyL2CiUNetQ0mlnXgK5vT0k=\"}'
+    'advanced-frontend' => '21nq5kvshinift39q460j8ej0g'
+    '_csrf-frontend' => '91c469447ab9f5f98ad6ce532fe047d4eabd87c7959e279591ac6ec6c71724d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-GXgY3obXAVbp0uksd75Bqs5GZguC0kF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'XKSW2x14gqtxr2jIi@VRBwAAAA0'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'XKSW2x14gqtxr2jIi@VRBwAAAA0'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_LENGTH' => '250'
+    'HTTP_COOKIE' => 'phpMyAdmin=4qhb1thq8kg7cgcavs1gn99fk8; pma_lang=en; pmaUser-1=%7B%22iv%22%3A%22JOsaigMNBlfgTFmcK8h1tw%3D%3D%22%2C%22mac%22%3A%22b3a4d83ba962c8a38c27fd8788b10fbab3362798%22%2C%22payload%22%3A%22BHvaWaCMXRRCN2iHmDu6KA%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22YYlvJ2kyHm68ASMzMATCBw%3D%3D%22%2C%22mac%22%3A%22025bb98a2feb928b63076a72aecd0d1252ced711%22%2C%22payload%22%3A%22Goa9MTlbKR67DK%5C%2FXoRbQSyL2CiUNetQ0mlnXgK5vT0k%3D%22%7D; advanced-frontend=21nq5kvshinift39q460j8ej0g; _csrf-frontend=91c469447ab9f5f98ad6ce532fe047d4eabd87c7959e279591ac6ec6c71724d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-GXgY3obXAVbp0uksd75Bqs5GZguC0kF%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.6 (CentOS) PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '46566'
+    'REDIRECT_QUERY_STRING' => 'ajax_request=1'
+    'REDIRECT_URL' => '/phpMyAdmin/navigation.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'ajax_request=1'
+    'REQUEST_URI' => '/phpMyAdmin/navigation.php?ajax_request=1'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1554290395.774
+    'REQUEST_TIME' => 1554290395
+]
+2019-04-03 11:19:55 [::1][-][21nq5kvshinift39q460j8ej0g][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Unable to verify your data submission. in /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#2 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#3 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /var/www/html/mercskyafrica/frontend/web/index.php(17): yii\base\Application->run()
+#5 {main}
+2019-04-03 11:19:55 [::1][-][21nq5kvshinift39q460j8ej0g][info][application] $_GET = []
+
+$_POST = [
+    'type' => 'config-get'
+    'server' => '1'
+    'key' => 'Console'
+    '_nocache' => '1554290395844149874'
+    'token' => ']T8&xcvr[4?\\h.H='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'phpMyAdmin' => '4qhb1thq8kg7cgcavs1gn99fk8'
+    'pma_lang' => 'en'
+    'pmaUser-1' => '{\"iv\":\"JOsaigMNBlfgTFmcK8h1tw==\",\"mac\":\"b3a4d83ba962c8a38c27fd8788b10fbab3362798\",\"payload\":\"BHvaWaCMXRRCN2iHmDu6KA==\"}'
+    'pmaAuth-1' => '{\"iv\":\"YYlvJ2kyHm68ASMzMATCBw==\",\"mac\":\"025bb98a2feb928b63076a72aecd0d1252ced711\",\"payload\":\"Goa9MTlbKR67DK\\/XoRbQSyL2CiUNetQ0mlnXgK5vT0k=\"}'
+    'advanced-frontend' => '21nq5kvshinift39q460j8ej0g'
+    '_csrf-frontend' => '91c469447ab9f5f98ad6ce532fe047d4eabd87c7959e279591ac6ec6c71724d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-GXgY3obXAVbp0uksd75Bqs5GZguC0kF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'XKSW2w6N--MKWaSZvCIUMAAAAAk'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'XKSW2w6N--MKWaSZvCIUMAAAAAk'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_LENGTH' => '100'
+    'HTTP_COOKIE' => 'phpMyAdmin=4qhb1thq8kg7cgcavs1gn99fk8; pma_lang=en; pmaUser-1=%7B%22iv%22%3A%22JOsaigMNBlfgTFmcK8h1tw%3D%3D%22%2C%22mac%22%3A%22b3a4d83ba962c8a38c27fd8788b10fbab3362798%22%2C%22payload%22%3A%22BHvaWaCMXRRCN2iHmDu6KA%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22YYlvJ2kyHm68ASMzMATCBw%3D%3D%22%2C%22mac%22%3A%22025bb98a2feb928b63076a72aecd0d1252ced711%22%2C%22payload%22%3A%22Goa9MTlbKR67DK%5C%2FXoRbQSyL2CiUNetQ0mlnXgK5vT0k%3D%22%7D; advanced-frontend=21nq5kvshinift39q460j8ej0g; _csrf-frontend=91c469447ab9f5f98ad6ce532fe047d4eabd87c7959e279591ac6ec6c71724d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-GXgY3obXAVbp0uksd75Bqs5GZguC0kF%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.6 (CentOS) PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '46562'
+    'REDIRECT_URL' => '/phpMyAdmin/ajax.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/phpMyAdmin/ajax.php'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1554290395.851
+    'REQUEST_TIME' => 1554290395
+]
+2019-04-03 11:19:56 [::1][-][21nq5kvshinift39q460j8ej0g][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Unable to verify your data submission. in /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#2 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#3 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /var/www/html/mercskyafrica/frontend/web/index.php(17): yii\base\Application->run()
+#5 {main}
+2019-04-03 11:19:55 [::1][-][21nq5kvshinift39q460j8ej0g][info][application] $_GET = []
+
+$_POST = [
+    'key' => 'Console/Mode'
+    'type' => 'config-set'
+    'server' => '1'
+    'value' => '\"collapse\"'
+    '_nocache' => '1554290395962302268'
+    'token' => ']T8&xcvr[4?\\h.H='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'phpMyAdmin' => '4qhb1thq8kg7cgcavs1gn99fk8'
+    'pma_lang' => 'en'
+    'pmaUser-1' => '{\"iv\":\"JOsaigMNBlfgTFmcK8h1tw==\",\"mac\":\"b3a4d83ba962c8a38c27fd8788b10fbab3362798\",\"payload\":\"BHvaWaCMXRRCN2iHmDu6KA==\"}'
+    'pmaAuth-1' => '{\"iv\":\"YYlvJ2kyHm68ASMzMATCBw==\",\"mac\":\"025bb98a2feb928b63076a72aecd0d1252ced711\",\"payload\":\"Goa9MTlbKR67DK\\/XoRbQSyL2CiUNetQ0mlnXgK5vT0k=\"}'
+    'advanced-frontend' => '21nq5kvshinift39q460j8ej0g'
+    '_csrf-frontend' => '91c469447ab9f5f98ad6ce532fe047d4eabd87c7959e279591ac6ec6c71724d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-GXgY3obXAVbp0uksd75Bqs5GZguC0kF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'XKSW26a9shcPx3DaDsMBGgAAAAg'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'XKSW26a9shcPx3DaDsMBGgAAAAg'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_LENGTH' => '128'
+    'HTTP_COOKIE' => 'phpMyAdmin=4qhb1thq8kg7cgcavs1gn99fk8; pma_lang=en; pmaUser-1=%7B%22iv%22%3A%22JOsaigMNBlfgTFmcK8h1tw%3D%3D%22%2C%22mac%22%3A%22b3a4d83ba962c8a38c27fd8788b10fbab3362798%22%2C%22payload%22%3A%22BHvaWaCMXRRCN2iHmDu6KA%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22YYlvJ2kyHm68ASMzMATCBw%3D%3D%22%2C%22mac%22%3A%22025bb98a2feb928b63076a72aecd0d1252ced711%22%2C%22payload%22%3A%22Goa9MTlbKR67DK%5C%2FXoRbQSyL2CiUNetQ0mlnXgK5vT0k%3D%22%7D; advanced-frontend=21nq5kvshinift39q460j8ej0g; _csrf-frontend=91c469447ab9f5f98ad6ce532fe047d4eabd87c7959e279591ac6ec6c71724d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-GXgY3obXAVbp0uksd75Bqs5GZguC0kF%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.6 (CentOS) PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '46560'
+    'REDIRECT_URL' => '/phpMyAdmin/ajax.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/phpMyAdmin/ajax.php'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1554290395.962
+    'REQUEST_TIME' => 1554290395
+]
+2019-04-03 11:19:56 [::1][-][21nq5kvshinift39q460j8ej0g][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Unable to verify your data submission. in /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#2 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#3 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /var/www/html/mercskyafrica/frontend/web/index.php(17): yii\base\Application->run()
+#5 {main}
+2019-04-03 11:19:56 [::1][-][21nq5kvshinift39q460j8ej0g][info][application] $_GET = []
+
+$_POST = [
+    'server' => '1'
+    '_nocache' => '1554290396012707875'
+    'token' => ']T8&xcvr[4?\\h.H='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'phpMyAdmin' => '4qhb1thq8kg7cgcavs1gn99fk8'
+    'pma_lang' => 'en'
+    'pmaUser-1' => '{\"iv\":\"JOsaigMNBlfgTFmcK8h1tw==\",\"mac\":\"b3a4d83ba962c8a38c27fd8788b10fbab3362798\",\"payload\":\"BHvaWaCMXRRCN2iHmDu6KA==\"}'
+    'pmaAuth-1' => '{\"iv\":\"YYlvJ2kyHm68ASMzMATCBw==\",\"mac\":\"025bb98a2feb928b63076a72aecd0d1252ced711\",\"payload\":\"Goa9MTlbKR67DK\\/XoRbQSyL2CiUNetQ0mlnXgK5vT0k=\"}'
+    'advanced-frontend' => '21nq5kvshinift39q460j8ej0g'
+    '_csrf-frontend' => '91c469447ab9f5f98ad6ce532fe047d4eabd87c7959e279591ac6ec6c71724d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-GXgY3obXAVbp0uksd75Bqs5GZguC0kF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'XKSW3LdDpIYZG6jwxnYXYAAAAAY'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'XKSW3LdDpIYZG6jwxnYXYAAAAAY'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_LENGTH' => '72'
+    'HTTP_COOKIE' => 'phpMyAdmin=4qhb1thq8kg7cgcavs1gn99fk8; pma_lang=en; pmaUser-1=%7B%22iv%22%3A%22JOsaigMNBlfgTFmcK8h1tw%3D%3D%22%2C%22mac%22%3A%22b3a4d83ba962c8a38c27fd8788b10fbab3362798%22%2C%22payload%22%3A%22BHvaWaCMXRRCN2iHmDu6KA%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22YYlvJ2kyHm68ASMzMATCBw%3D%3D%22%2C%22mac%22%3A%22025bb98a2feb928b63076a72aecd0d1252ced711%22%2C%22payload%22%3A%22Goa9MTlbKR67DK%5C%2FXoRbQSyL2CiUNetQ0mlnXgK5vT0k%3D%22%7D; advanced-frontend=21nq5kvshinift39q460j8ej0g; _csrf-frontend=91c469447ab9f5f98ad6ce532fe047d4eabd87c7959e279591ac6ec6c71724d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-GXgY3obXAVbp0uksd75Bqs5GZguC0kF%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.6 (CentOS) PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '46572'
+    'REDIRECT_URL' => '/phpMyAdmin/version_check.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/phpMyAdmin/version_check.php'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1554290396.015
+    'REQUEST_TIME' => 1554290396
+]
+2019-04-03 11:21:33 [::1][-][21nq5kvshinift39q460j8ej0g][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Unable to verify your data submission. in /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#2 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/login', Array)
+#3 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /var/www/html/mercskyafrica/frontend/web/index.php(17): yii\base\Application->run()
+#5 {main}
+2019-04-03 11:21:33 [::1][-][21nq5kvshinift39q460j8ej0g][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'Rz7jVBErWlPpOxDL4AsxBsbnwpEcLrpHMAtLnOY8cgQJcZQLe1MAFt5TV52EM100nLiR-HRs0QxhQx7Kgm9EVw=='
+    'LoginForm' => [
+        'username' => 'superadmin'
+        'password' => '1234567890'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '21nq5kvshinift39q460j8ej0g'
+    '_csrf-frontend' => '91c469447ab9f5f98ad6ce532fe047d4eabd87c7959e279591ac6ec6c71724d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-GXgY3obXAVbp0uksd75Bqs5GZguC0kF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'XKSXPR4PeZEqQyf6pWVxLAAAAAQ'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'XKSXPR4PeZEqQyf6pWVxLAAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/mercskyafrica/site/login'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '192'
+    'HTTP_COOKIE' => 'advanced-frontend=21nq5kvshinift39q460j8ej0g; _csrf-frontend=91c469447ab9f5f98ad6ce532fe047d4eabd87c7959e279591ac6ec6c71724d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-GXgY3obXAVbp0uksd75Bqs5GZguC0kF%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.6 (CentOS) PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '46652'
+    'REDIRECT_URL' => '/mercskyafrica/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mercskyafrica/site/login'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1554290493.737
+    'REQUEST_TIME' => 1554290493
+]
+2019-04-03 11:21:44 [::1][-][21nq5kvshinift39q460j8ej0g][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Command.php(1153): yii\db\Command->prepare(true)
+#6 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/mysql/Schema.php(319): yii\db\Command->queryAll()
+#8 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('user')
+#10 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%user}}', 'schema', false)
+#11 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/ActiveRecord.php(435): yii\db\Schema->getTableSchema('{{%user}}')
+#12 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/ActiveRecord.php(262): yii\db\ActiveRecord::getTableSchema()
+#13 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/ActiveRecord.php(234): yii\db\ActiveRecord::filterValidColumnNames(Object(yii\db\Connection), Array)
+#14 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/ActiveRecord.php(191): yii\db\ActiveRecord::filterCondition(Array, Array)
+#15 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#16 /var/www/html/mercskyafrica/common/models/User.php(83): yii\db\BaseActiveRecord::findOne(Array)
+#17 /var/www/html/mercskyafrica/common/models/LoginForm.php(73): common\models\User::findByUsername('superadmin')
+#18 /var/www/html/mercskyafrica/common/models/LoginForm.php(44): common\models\LoginForm->getUser()
+#19 [internal function]: common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#20 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/validators/InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#21 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/validators/Validator.php(257): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#22 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#23 /var/www/html/mercskyafrica/common/models/LoginForm.php(58): yii\base\Model->validate()
+#24 /var/www/html/mercskyafrica/frontend/controllers/SiteController.php(112): common\models\LoginForm->login()
+#25 [internal function]: frontend\controllers\SiteController->actionLogin()
+#26 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#27 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#28 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#29 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/login', Array)
+#30 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 /var/www/html/mercskyafrica/frontend/web/index.php(17): yii\base\Application->run()
+#32 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Command.php(1153): yii\db\Command->prepare(true)
+#4 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/mysql/Schema.php(319): yii\db\Command->queryAll()
+#6 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('user')
+#8 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%user}}', 'schema', false)
+#9 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/ActiveRecord.php(435): yii\db\Schema->getTableSchema('{{%user}}')
+#10 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/ActiveRecord.php(262): yii\db\ActiveRecord::getTableSchema()
+#11 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/ActiveRecord.php(234): yii\db\ActiveRecord::filterValidColumnNames(Object(yii\db\Connection), Array)
+#12 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/ActiveRecord.php(191): yii\db\ActiveRecord::filterCondition(Array, Array)
+#13 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#14 /var/www/html/mercskyafrica/common/models/User.php(83): yii\db\BaseActiveRecord::findOne(Array)
+#15 /var/www/html/mercskyafrica/common/models/LoginForm.php(73): common\models\User::findByUsername('superadmin')
+#16 /var/www/html/mercskyafrica/common/models/LoginForm.php(44): common\models\LoginForm->getUser()
+#17 [internal function]: common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#18 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/validators/InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#19 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/validators/Validator.php(257): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#20 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#21 /var/www/html/mercskyafrica/common/models/LoginForm.php(58): yii\base\Model->validate()
+#22 /var/www/html/mercskyafrica/frontend/controllers/SiteController.php(112): common\models\LoginForm->login()
+#23 [internal function]: frontend\controllers\SiteController->actionLogin()
+#24 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#25 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#26 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#27 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/login', Array)
+#28 /var/www/html/mercskyafrica/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 /var/www/html/mercskyafrica/frontend/web/index.php(17): yii\base\Application->run()
+#30 {main}
+Additional Information:
+
+2019-04-03 11:21:44 [::1][-][21nq5kvshinift39q460j8ej0g][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'mDCCoaCvfKLZFMDkUXwdlXAk0Q74p8d6Pisulq77DHW1d9rG-ZwTwIFVloYhTGj-A0DmO7rWtE95cUnj7ctnMw=='
+    'LoginForm' => [
+        'username' => 'superadmin'
+        'password' => '1234567890'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '21nq5kvshinift39q460j8ej0g'
+    '_csrf-frontend' => '91c469447ab9f5f98ad6ce532fe047d4eabd87c7959e279591ac6ec6c71724d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-GXgY3obXAVbp0uksd75Bqs5GZguC0kF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'XKSXSB14gqtxr2jIi@VRCQAAAA0'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'XKSXSB14gqtxr2jIi@VRCQAAAA0'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/mercskyafrica/site/login'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '192'
+    'HTTP_COOKIE' => 'advanced-frontend=21nq5kvshinift39q460j8ej0g; _csrf-frontend=91c469447ab9f5f98ad6ce532fe047d4eabd87c7959e279591ac6ec6c71724d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-GXgY3obXAVbp0uksd75Bqs5GZguC0kF%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.6 (CentOS) PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '46676'
+    'REDIRECT_URL' => '/mercskyafrica/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mercskyafrica/site/login'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1554290504.761
+    'REQUEST_TIME' => 1554290504
+]

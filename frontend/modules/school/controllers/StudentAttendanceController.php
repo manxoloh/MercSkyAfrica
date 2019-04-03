@@ -9,6 +9,7 @@ use common\models\Students;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use common\models\Streams;
 
 /**
  * StudentAttendanceController implements the CRUD actions for StudentAttendance model.
@@ -75,6 +76,16 @@ class StudentAttendanceController extends Controller
         return $this->render('create', [
             'model' => $model,
         ]);
+    }    
+    public function actionStream($class)
+    {
+        $stream = Streams::find()->where(['class_id'=>$class])->one();
+        
+        if($stream){
+            echo "<option value='".$stream->stream_id."'>".$stream->stream_name."</option>";
+        }else{
+            echo "<option>There is no stream_name in the selected class</option>";
+        }
     }
 
     /**
