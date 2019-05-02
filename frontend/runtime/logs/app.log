@@ -21468,3 +21468,2070 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1554290504.761
     'REQUEST_TIME' => 1554290504
 ]
+2019-04-13 14:27:36 [127.0.0.1][-][-][error][yii\base\ErrorException:256] yii\base\ErrorException: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'The directory does not exist: C:/xampp/htdocs/mercskyafrica/frontend/web/assets' 
+
+in C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\AssetManager.php:213
+
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\BaseObject->__construct(Array)
+#2 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\di\Container.php(376): ReflectionClass->newInstanceArgs(Array)
+#3 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#6 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('assetManager', true)
+#7 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(608): yii\base\Module->get('assetManager')
+#8 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\View.php(225): yii\base\Application->getAssetManager()
+#9 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\View.php(285): yii\web\View->getAssetManager()
+#10 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('yii\\validators\\...')
+#11 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\validators\RequiredValidator.php(91): yii\web\AssetBundle::register(Object(yii\web\View))
+#12 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\widgets\ActiveField.php(820): yii\validators\RequiredValidator->clientValidateAttribute(Object(common\models\LoginForm), 'username', Object(yii\web\View))
+#13 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\widgets\ActiveField.php(230): yii\widgets\ActiveField->getClientOptions()
+#14 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\widgets\ActiveField.php(220): yii\widgets\ActiveField->begin()
+#15 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2-bootstrap\src\ActiveField.php(187): yii\widgets\ActiveField->render('\n<input type="t...')
+#16 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\widgets\ActiveField.php(176): yii\bootstrap\ActiveField->render()
+#17 C:\xampp\htdocs\mercskyafrica\frontend\views\site\login.php(23): yii\widgets\ActiveField->__toString()
+#18 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#19 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#20 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#21 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('login', Array, Object(frontend\controllers\SiteController))
+#22 C:\xampp\htdocs\mercskyafrica\frontend\controllers\SiteController.php(119): yii\base\Controller->render('login', Array)
+#23 [internal function]: frontend\controllers\SiteController->actionLogin()
+#24 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#25 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#26 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#27 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#28 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#30 {main} in C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\ErrorHandler.php:317
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(256, 'Exception (Inva...', 'C:\\xampp\\htdocs...', 317, Array)
+#1 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\ErrorHandler.php(317): trigger_error('Exception (Inva...', 256)
+#2 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\widgets\ActiveField.php(178): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\InvalidConfigException))
+#3 C:\xampp\htdocs\mercskyafrica\frontend\views\site\login.php(23): yii\widgets\ActiveField->__toString()
+#4 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', '[<span class="s...')
+#6 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#7 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('login', Array, Object(frontend\controllers\SiteController))
+#8 C:\xampp\htdocs\mercskyafrica\frontend\controllers\SiteController.php(119): yii\base\Controller->render('login', Array)
+#9 [internal function]: frontend\controllers\SiteController->actionLogin()
+#10 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#14 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#16 {main}
+    in C:\xampp\htdocs\mercskyafrica\frontend\views\site\login.php:23
+    in C:\xampp\htdocs\mercskyafrica\frontend\controllers\SiteController.php:119
+2019-04-13 14:27:33 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '50401'
+    'REDIRECT_URL' => '/mercskyafrica/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mercskyafrica/site/login'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1555158453.649
+    'REQUEST_TIME' => 1555158453
+]
+2019-04-13 14:30:29 [127.0.0.1][-][au3qcj9ffn3dda2s0s1iq8t058][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\Connection.php:687
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\Connection.php(687): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#3 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\mysql\Schema.php(319): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\mysql\Schema->loadTableSchema('user')
+#10 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%user}}', 'schema', false)
+#11 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\ActiveRecord.php(390): yii\db\Schema->getTableSchema('{{%user}}')
+#12 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\ActiveRecord.php(216): yii\db\ActiveRecord::getTableSchema()
+#13 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#14 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#15 C:\xampp\htdocs\mercskyafrica\common\models\User.php(83): yii\db\BaseActiveRecord::findOne(Array)
+#16 C:\xampp\htdocs\mercskyafrica\common\models\LoginForm.php(73): common\models\User::findByUsername('superadmin')
+#17 C:\xampp\htdocs\mercskyafrica\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
+#18 [internal function]: common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#19 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#20 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#21 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#22 C:\xampp\htdocs\mercskyafrica\common\models\LoginForm.php(58): yii\base\Model->validate()
+#23 C:\xampp\htdocs\mercskyafrica\frontend\controllers\SiteController.php(112): common\models\LoginForm->login()
+#24 [internal function]: frontend\controllers\SiteController->actionLogin()
+#25 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#26 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#27 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#28 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#29 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#30 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#31 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\Connection.php:624
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#1 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\mysql\Schema.php(319): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\mysql\Schema->loadTableSchema('user')
+#8 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%user}}', 'schema', false)
+#9 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\ActiveRecord.php(390): yii\db\Schema->getTableSchema('{{%user}}')
+#10 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\ActiveRecord.php(216): yii\db\ActiveRecord::getTableSchema()
+#11 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#12 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#13 C:\xampp\htdocs\mercskyafrica\common\models\User.php(83): yii\db\BaseActiveRecord::findOne(Array)
+#14 C:\xampp\htdocs\mercskyafrica\common\models\LoginForm.php(73): common\models\User::findByUsername('superadmin')
+#15 C:\xampp\htdocs\mercskyafrica\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
+#16 [internal function]: common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#17 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#18 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#19 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#20 C:\xampp\htdocs\mercskyafrica\common\models\LoginForm.php(58): yii\base\Model->validate()
+#21 C:\xampp\htdocs\mercskyafrica\frontend\controllers\SiteController.php(112): common\models\LoginForm->login()
+#22 [internal function]: frontend\controllers\SiteController->actionLogin()
+#23 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#25 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#26 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#27 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#29 {main}
+Additional Information:
+
+2019-04-13 14:30:29 [127.0.0.1][-][au3qcj9ffn3dda2s0s1iq8t058][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'K286vd__J3wMLLlV-lH3dyuade7bGhQpAAAFJcZCxu9mABeJjK5eTW9AyAC4I6UTXuozm7ZJf2VHbUAXvgGvng=='
+    'LoginForm' => [
+        'username' => 'superadmin'
+        'password' => '1234567890'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'au3qcj9ffn3dda2s0s1iq8t058'
+    '_csrf-frontend' => '995d9025d5b8b8c58dfd3218eb00099f8db65d1fce98e2dbb12ae43ff7e33363a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Mo-4SQy1clqUBrRdupFumSkLGmE2xCiq\";}'
+    '__utma' => '111872281.524911617.1555158495.1555158495.1555158495.1'
+    '__utmb' => '111872281.2.10.1555158495'
+    '__utmc' => '111872281'
+    '__utmz' => '111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/mercskyafrica/site/login'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '192'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=au3qcj9ffn3dda2s0s1iq8t058; _csrf-frontend=995d9025d5b8b8c58dfd3218eb00099f8db65d1fce98e2dbb12ae43ff7e33363a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Mo-4SQy1clqUBrRdupFumSkLGmE2xCiq%22%3B%7D; __utma=111872281.524911617.1555158495.1555158495.1555158495.1; __utmb=111872281.2.10.1555158495; __utmc=111872281; __utmz=111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmt=1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '50537'
+    'REDIRECT_URL' => '/mercskyafrica/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mercskyafrica/site/login'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1555158629.329
+    'REQUEST_TIME' => 1555158629
+]
+2019-04-13 14:32:01 [127.0.0.1][1][qpd0h288eofsk2h9hkqneolfkl][error][yii\base\ErrorException:1] yii\base\ErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\helpers\BaseFileHelper.php:336
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-04-13 14:31:31 [127.0.0.1][1][qpd0h288eofsk2h9hkqneolfkl][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qpd0h288eofsk2h9hkqneolfkl'
+    '_csrf-frontend' => '640ad3dc24c0c5efc6a89cbd37d5d8d19f5cb44272b441c7c034cc46f1c90f24a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Nsu8R17g0m-5bGf7JVni1YGxBRQZd6q2\";}'
+    '__utma' => '111872281.524911617.1555158495.1555158495.1555158495.1'
+    '__utmb' => '111872281.2.10.1555158495'
+    '__utmc' => '111872281'
+    '__utmz' => '111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__utmt' => '1'
+    '_identity-frontend' => 'a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"zOKsERzbKhUegmJWLGLorcvJ545uFKl9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    '__id' => 1
+    'success' => 'Welcome to Mercsky Africa'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/mercskyafrica/site/login'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=qpd0h288eofsk2h9hkqneolfkl; _csrf-frontend=640ad3dc24c0c5efc6a89cbd37d5d8d19f5cb44272b441c7c034cc46f1c90f24a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Nsu8R17g0m-5bGf7JVni1YGxBRQZd6q2%22%3B%7D; __utma=111872281.524911617.1555158495.1555158495.1555158495.1; __utmb=111872281.2.10.1555158495; __utmc=111872281; __utmz=111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmt=1; _identity-frontend=a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22zOKsERzbKhUegmJWLGLorcvJ545uFKl9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '50544'
+    'REDIRECT_URL' => '/mercskyafrica/site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mercskyafrica/site/index'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1555158691.8
+    'REQUEST_TIME' => 1555158691
+]
+2019-04-13 15:44:49 [127.0.0.1][1][qpd0h288eofsk2h9hkqneolfkl][error][yii\base\ErrorException:1] yii\base\ErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\helpers\BaseFileHelper.php:336
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-04-13 15:44:19 [127.0.0.1][1][qpd0h288eofsk2h9hkqneolfkl][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qpd0h288eofsk2h9hkqneolfkl'
+    '_csrf-frontend' => '640ad3dc24c0c5efc6a89cbd37d5d8d19f5cb44272b441c7c034cc46f1c90f24a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Nsu8R17g0m-5bGf7JVni1YGxBRQZd6q2\";}'
+    '__utma' => '111872281.524911617.1555158495.1555158495.1555158495.1'
+    '__utmc' => '111872281'
+    '__utmz' => '111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_identity-frontend' => 'a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"zOKsERzbKhUegmJWLGLorcvJ545uFKl9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    '__id' => 1
+    'success' => 'Welcome to Mercsky Africa'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/mercskyafrica/site/login'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=qpd0h288eofsk2h9hkqneolfkl; _csrf-frontend=640ad3dc24c0c5efc6a89cbd37d5d8d19f5cb44272b441c7c034cc46f1c90f24a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Nsu8R17g0m-5bGf7JVni1YGxBRQZd6q2%22%3B%7D; __utma=111872281.524911617.1555158495.1555158495.1555158495.1; __utmc=111872281; __utmz=111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _identity-frontend=a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22zOKsERzbKhUegmJWLGLorcvJ545uFKl9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '50630'
+    'REDIRECT_URL' => '/mercskyafrica/site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mercskyafrica/site/index'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1555163058.859
+    'REQUEST_TIME' => 1555163058
+]
+2019-04-14 19:30:37 [::1][1][k653m55e172o7cqqu9kdof12nj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "classes/timetable". in C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('classes/timetab...', Array)
+#1 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-04-14 19:30:36 [::1][1][k653m55e172o7cqqu9kdof12nj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__utma' => '111872281.524911617.1555158495.1555173028.1555262798.4'
+    '__utmz' => '111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_identity-frontend' => 'a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"zOKsERzbKhUegmJWLGLorcvJ545uFKl9\",2592000]\";}'
+    'PHPSESSID' => 'vctd3ptfb3o392m3gnh3kto88p'
+    'advanced-frontend' => 'k653m55e172o7cqqu9kdof12nj'
+    '_csrf-frontend' => '61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH\";}'
+    '__utmb' => '111872281.2.10.1555262798'
+    '__utmc' => '111872281'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '__utma=111872281.524911617.1555158495.1555173028.1555262798.4; __utmz=111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _identity-frontend=a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22zOKsERzbKhUegmJWLGLorcvJ545uFKl9%22%2C2592000%5D%22%3B%7D; PHPSESSID=vctd3ptfb3o392m3gnh3kto88p; advanced-frontend=k653m55e172o7cqqu9kdof12nj; _csrf-frontend=61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH%22%3B%7D; __utmb=111872281.2.10.1555262798; __utmc=111872281; __utmt=1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '51205'
+    'REDIRECT_URL' => '/mercskyafrica/classes/timetable'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mercskyafrica/classes/timetable'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1555263035.93
+    'REQUEST_TIME' => 1555263035
+]
+2019-04-14 19:49:06 [::1][1][k653m55e172o7cqqu9kdof12nj][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\mercskyafrica\frontend\modules\school\views\timetable\index.php in C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\modules\school\controllers\TimetableController))
+#1 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(frontend\modules\school\controllers\TimetableController))
+#2 C:\xampp\htdocs\mercskyafrica\frontend\modules\school\controllers\TimetableController.php(43): yii\base\Controller->render('index', Array)
+#3 [internal function]: frontend\modules\school\controllers\TimetableController->actionIndex()
+#4 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#7 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('school/timetabl...', Array)
+#8 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2019-04-14 19:49:05 [::1][1][k653m55e172o7cqqu9kdof12nj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__utma' => '111872281.524911617.1555158495.1555173028.1555262798.4'
+    '__utmz' => '111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_identity-frontend' => 'a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"zOKsERzbKhUegmJWLGLorcvJ545uFKl9\",2592000]\";}'
+    'PHPSESSID' => 'vctd3ptfb3o392m3gnh3kto88p'
+    'advanced-frontend' => 'k653m55e172o7cqqu9kdof12nj'
+    '_csrf-frontend' => '61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH\";}'
+    '__utmb' => '111872281.10.10.1555262798'
+    '__utmc' => '111872281'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '__utma=111872281.524911617.1555158495.1555173028.1555262798.4; __utmz=111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _identity-frontend=a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22zOKsERzbKhUegmJWLGLorcvJ545uFKl9%22%2C2592000%5D%22%3B%7D; PHPSESSID=vctd3ptfb3o392m3gnh3kto88p; advanced-frontend=k653m55e172o7cqqu9kdof12nj; _csrf-frontend=61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH%22%3B%7D; __utmb=111872281.10.10.1555262798; __utmc=111872281'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '54837'
+    'REDIRECT_URL' => '/mercskyafrica/school/timetable'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mercskyafrica/school/timetable'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1555264145.766
+    'REQUEST_TIME' => 1555264145
+]
+2019-04-14 20:37:49 [::1][1][k653m55e172o7cqqu9kdof12nj][error][ParseError] ParseError: syntax error, unexpected end of file in C:\xampp\htdocs\mercskyafrica\frontend\modules\school\views\timetable\index.php:96
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\modules\school\controllers\TimetableController))
+#2 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(frontend\modules\school\controllers\TimetableController))
+#3 C:\xampp\htdocs\mercskyafrica\frontend\modules\school\controllers\TimetableController.php(40): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\modules\school\controllers\TimetableController->actionIndex('1')
+#5 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#8 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('school/timetabl...', Array)
+#9 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2019-04-14 20:37:45 [::1][1][k653m55e172o7cqqu9kdof12nj][info][application] $_GET = [
+    'class_id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__utma' => '111872281.524911617.1555158495.1555173028.1555262798.4'
+    '__utmz' => '111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_identity-frontend' => 'a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"zOKsERzbKhUegmJWLGLorcvJ545uFKl9\",2592000]\";}'
+    'advanced-frontend' => 'k653m55e172o7cqqu9kdof12nj'
+    '_csrf-frontend' => '61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH\";}'
+    '__utmb' => '111872281.26.10.1555262798'
+    '__utmc' => '111872281'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/mercskyafrica/school/timetable'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '__utma=111872281.524911617.1555158495.1555173028.1555262798.4; __utmz=111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _identity-frontend=a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22zOKsERzbKhUegmJWLGLorcvJ545uFKl9%22%2C2592000%5D%22%3B%7D; advanced-frontend=k653m55e172o7cqqu9kdof12nj; _csrf-frontend=61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH%22%3B%7D; __utmb=111872281.26.10.1555262798; __utmc=111872281'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '63896'
+    'REDIRECT_URL' => '/mercskyafrica/school/timetable'
+    'REDIRECT_QUERY_STRING' => 'class_id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'class_id=1'
+    'REQUEST_URI' => '/mercskyafrica/school/timetable?class_id=1'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1555267062.366
+    'REQUEST_TIME' => 1555267062
+]
+2019-04-14 20:43:35 [::1][1][k653m55e172o7cqqu9kdof12nj][error][ParseError] ParseError: syntax error, unexpected end of file in C:\xampp\htdocs\mercskyafrica\frontend\modules\school\views\timetable\index.php:93
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\modules\school\controllers\TimetableController))
+#2 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(frontend\modules\school\controllers\TimetableController))
+#3 C:\xampp\htdocs\mercskyafrica\frontend\modules\school\controllers\TimetableController.php(40): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\modules\school\controllers\TimetableController->actionIndex('1')
+#5 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#8 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('school/timetabl...', Array)
+#9 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2019-04-14 20:43:35 [::1][1][k653m55e172o7cqqu9kdof12nj][info][application] $_GET = [
+    'class_id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__utma' => '111872281.524911617.1555158495.1555173028.1555262798.4'
+    '__utmz' => '111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_identity-frontend' => 'a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"zOKsERzbKhUegmJWLGLorcvJ545uFKl9\",2592000]\";}'
+    'advanced-frontend' => 'k653m55e172o7cqqu9kdof12nj'
+    '_csrf-frontend' => '61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH\";}'
+    '__utmb' => '111872281.26.10.1555262798'
+    '__utmc' => '111872281'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/mercskyafrica/school/timetable'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '__utma=111872281.524911617.1555158495.1555173028.1555262798.4; __utmz=111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _identity-frontend=a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22zOKsERzbKhUegmJWLGLorcvJ545uFKl9%22%2C2592000%5D%22%3B%7D; advanced-frontend=k653m55e172o7cqqu9kdof12nj; _csrf-frontend=61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH%22%3B%7D; __utmb=111872281.26.10.1555262798; __utmc=111872281'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '64763'
+    'REDIRECT_URL' => '/mercskyafrica/school/timetable'
+    'REDIRECT_QUERY_STRING' => 'class_id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'class_id=1'
+    'REQUEST_URI' => '/mercskyafrica/school/timetable?class_id=1'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1555267415.587
+    'REQUEST_TIME' => 1555267415
+]
+2019-04-14 21:02:48 [::1][1][k653m55e172o7cqqu9kdof12nj][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: stream in C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Controller.php:149
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#3 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('school/timetabl...', Array)
+#4 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2019-04-14 21:02:44 [::1][1][k653m55e172o7cqqu9kdof12nj][info][application] $_GET = [
+    'class_id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__utma' => '111872281.524911617.1555158495.1555173028.1555262798.4'
+    '__utmz' => '111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_identity-frontend' => 'a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"zOKsERzbKhUegmJWLGLorcvJ545uFKl9\",2592000]\";}'
+    'advanced-frontend' => 'k653m55e172o7cqqu9kdof12nj'
+    '_csrf-frontend' => '61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH\";}'
+    '__utmc' => '111872281'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/mercskyafrica/school/timetable'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '__utma=111872281.524911617.1555158495.1555173028.1555262798.4; __utmz=111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _identity-frontend=a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22zOKsERzbKhUegmJWLGLorcvJ545uFKl9%22%2C2592000%5D%22%3B%7D; advanced-frontend=k653m55e172o7cqqu9kdof12nj; _csrf-frontend=61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH%22%3B%7D; __utmc=111872281'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '51993'
+    'REDIRECT_URL' => '/mercskyafrica/school/timetable'
+    'REDIRECT_QUERY_STRING' => 'class_id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'class_id=1'
+    'REQUEST_URI' => '/mercskyafrica/school/timetable?class_id=1'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1555268562.225
+    'REQUEST_TIME' => 1555268562
+]
+2019-04-14 21:03:23 [::1][1][k653m55e172o7cqqu9kdof12nj][error][ParseError] ParseError: syntax error, unexpected end of file in C:\xampp\htdocs\mercskyafrica\frontend\modules\school\views\timetable\index.php:74
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\modules\school\controllers\TimetableController))
+#2 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(frontend\modules\school\controllers\TimetableController))
+#3 C:\xampp\htdocs\mercskyafrica\frontend\modules\school\controllers\TimetableController.php(39): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\modules\school\controllers\TimetableController->actionIndex('1')
+#5 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#8 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('school/timetabl...', Array)
+#9 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2019-04-14 21:03:22 [::1][1][k653m55e172o7cqqu9kdof12nj][info][application] $_GET = [
+    'class_id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__utma' => '111872281.524911617.1555158495.1555262798.1555268573.5'
+    '__utmz' => '111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_identity-frontend' => 'a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"zOKsERzbKhUegmJWLGLorcvJ545uFKl9\",2592000]\";}'
+    'advanced-frontend' => 'k653m55e172o7cqqu9kdof12nj'
+    '_csrf-frontend' => '61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH\";}'
+    '__utmc' => '111872281'
+    '__utmb' => '111872281.1.10.1555268573'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/mercskyafrica/school/timetable'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '__utma=111872281.524911617.1555158495.1555262798.1555268573.5; __utmz=111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _identity-frontend=a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22zOKsERzbKhUegmJWLGLorcvJ545uFKl9%22%2C2592000%5D%22%3B%7D; advanced-frontend=k653m55e172o7cqqu9kdof12nj; _csrf-frontend=61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH%22%3B%7D; __utmc=111872281; __utmb=111872281.1.10.1555268573; __utmt=1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '52127'
+    'REDIRECT_URL' => '/mercskyafrica/school/timetable'
+    'REDIRECT_QUERY_STRING' => 'class_id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'class_id=1'
+    'REQUEST_URI' => '/mercskyafrica/school/timetable?class_id=1'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1555268602.848
+    'REQUEST_TIME' => 1555268602
+]
+2019-04-14 21:04:11 [::1][1][k653m55e172o7cqqu9kdof12nj][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: row in C:\xampp\htdocs\mercskyafrica\frontend\modules\school\views\timetable\index.php:66
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\frontend\modules\school\views\timetable\index.php(66): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 66, Array)
+#1 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\modules\school\controllers\TimetableController))
+#4 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(frontend\modules\school\controllers\TimetableController))
+#5 C:\xampp\htdocs\mercskyafrica\frontend\modules\school\controllers\TimetableController.php(39): yii\base\Controller->render('index', Array)
+#6 [internal function]: frontend\modules\school\controllers\TimetableController->actionIndex('1')
+#7 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('school/timetabl...', Array)
+#11 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2019-04-14 21:04:10 [::1][1][k653m55e172o7cqqu9kdof12nj][info][application] $_GET = [
+    'class_id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__utma' => '111872281.524911617.1555158495.1555262798.1555268573.5'
+    '__utmz' => '111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_identity-frontend' => 'a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"zOKsERzbKhUegmJWLGLorcvJ545uFKl9\",2592000]\";}'
+    'advanced-frontend' => 'k653m55e172o7cqqu9kdof12nj'
+    '_csrf-frontend' => '61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH\";}'
+    '__utmc' => '111872281'
+    '__utmb' => '111872281.1.10.1555268573'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/mercskyafrica/school/timetable'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '__utma=111872281.524911617.1555158495.1555262798.1555268573.5; __utmz=111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _identity-frontend=a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22zOKsERzbKhUegmJWLGLorcvJ545uFKl9%22%2C2592000%5D%22%3B%7D; advanced-frontend=k653m55e172o7cqqu9kdof12nj; _csrf-frontend=61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH%22%3B%7D; __utmc=111872281; __utmb=111872281.1.10.1555268573; __utmt=1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '52268'
+    'REDIRECT_URL' => '/mercskyafrica/school/timetable'
+    'REDIRECT_QUERY_STRING' => 'class_id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'class_id=1'
+    'REQUEST_URI' => '/mercskyafrica/school/timetable?class_id=1'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1555268650.908
+    'REQUEST_TIME' => 1555268650
+]
+2019-04-14 21:11:06 [::1][1][k653m55e172o7cqqu9kdof12nj][error][yii\base\ErrorException:2] yii\base\ErrorException: Illegal string offset 'day' in C:\xampp\htdocs\mercskyafrica\frontend\modules\school\views\timetable\index.php:66
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\frontend\modules\school\views\timetable\index.php(66): yii\base\ErrorHandler->handleError(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 66, Array)
+#1 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\modules\school\controllers\TimetableController))
+#4 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(frontend\modules\school\controllers\TimetableController))
+#5 C:\xampp\htdocs\mercskyafrica\frontend\modules\school\controllers\TimetableController.php(39): yii\base\Controller->render('index', Array)
+#6 [internal function]: frontend\modules\school\controllers\TimetableController->actionIndex('1')
+#7 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('school/timetabl...', Array)
+#11 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2019-04-14 21:11:06 [::1][1][k653m55e172o7cqqu9kdof12nj][info][application] $_GET = [
+    'class_id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__utma' => '111872281.524911617.1555158495.1555262798.1555268573.5'
+    '__utmz' => '111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_identity-frontend' => 'a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"zOKsERzbKhUegmJWLGLorcvJ545uFKl9\",2592000]\";}'
+    'advanced-frontend' => 'k653m55e172o7cqqu9kdof12nj'
+    '_csrf-frontend' => '61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH\";}'
+    '__utmc' => '111872281'
+    '__utmb' => '111872281.5.10.1555268573'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/mercskyafrica/school/timetable?class_id=2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '__utma=111872281.524911617.1555158495.1555262798.1555268573.5; __utmz=111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _identity-frontend=a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22zOKsERzbKhUegmJWLGLorcvJ545uFKl9%22%2C2592000%5D%22%3B%7D; advanced-frontend=k653m55e172o7cqqu9kdof12nj; _csrf-frontend=61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH%22%3B%7D; __utmc=111872281; __utmb=111872281.5.10.1555268573; __utmt=1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '53640'
+    'REDIRECT_URL' => '/mercskyafrica/school/timetable'
+    'REDIRECT_QUERY_STRING' => 'class_id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'class_id=1'
+    'REQUEST_URI' => '/mercskyafrica/school/timetable?class_id=1'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1555269066.31
+    'REQUEST_TIME' => 1555269066
+]
+2019-04-14 21:11:36 [::1][1][k653m55e172o7cqqu9kdof12nj][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: subject in C:\xampp\htdocs\mercskyafrica\frontend\modules\school\views\timetable\index.php:68
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\frontend\modules\school\views\timetable\index.php(68): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 68, Array)
+#1 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\modules\school\controllers\TimetableController))
+#4 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(frontend\modules\school\controllers\TimetableController))
+#5 C:\xampp\htdocs\mercskyafrica\frontend\modules\school\controllers\TimetableController.php(39): yii\base\Controller->render('index', Array)
+#6 [internal function]: frontend\modules\school\controllers\TimetableController->actionIndex('1')
+#7 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('school/timetabl...', Array)
+#11 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2019-04-14 21:11:36 [::1][1][k653m55e172o7cqqu9kdof12nj][info][application] $_GET = [
+    'class_id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__utma' => '111872281.524911617.1555158495.1555262798.1555268573.5'
+    '__utmz' => '111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_identity-frontend' => 'a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"zOKsERzbKhUegmJWLGLorcvJ545uFKl9\",2592000]\";}'
+    'advanced-frontend' => 'k653m55e172o7cqqu9kdof12nj'
+    '_csrf-frontend' => '61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH\";}'
+    '__utmc' => '111872281'
+    '__utmb' => '111872281.5.10.1555268573'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/mercskyafrica/school/timetable?class_id=2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '__utma=111872281.524911617.1555158495.1555262798.1555268573.5; __utmz=111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _identity-frontend=a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22zOKsERzbKhUegmJWLGLorcvJ545uFKl9%22%2C2592000%5D%22%3B%7D; advanced-frontend=k653m55e172o7cqqu9kdof12nj; _csrf-frontend=61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH%22%3B%7D; __utmc=111872281; __utmb=111872281.5.10.1555268573; __utmt=1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '53735'
+    'REDIRECT_URL' => '/mercskyafrica/school/timetable'
+    'REDIRECT_QUERY_STRING' => 'class_id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'class_id=1'
+    'REQUEST_URI' => '/mercskyafrica/school/timetable?class_id=1'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1555269096.174
+    'REQUEST_TIME' => 1555269096
+]
+2019-04-14 21:12:05 [::1][1][k653m55e172o7cqqu9kdof12nj][error][yii\base\ErrorException:8] yii\base\ErrorException: Array to string conversion in C:\xampp\htdocs\mercskyafrica\frontend\modules\school\views\timetable\index.php:68
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\frontend\modules\school\views\timetable\index.php(68): yii\base\ErrorHandler->handleError(8, 'Array to string...', 'C:\\xampp\\htdocs...', 68, Array)
+#1 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\modules\school\controllers\TimetableController))
+#4 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(frontend\modules\school\controllers\TimetableController))
+#5 C:\xampp\htdocs\mercskyafrica\frontend\modules\school\controllers\TimetableController.php(39): yii\base\Controller->render('index', Array)
+#6 [internal function]: frontend\modules\school\controllers\TimetableController->actionIndex('1')
+#7 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('school/timetabl...', Array)
+#11 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2019-04-14 21:12:04 [::1][1][k653m55e172o7cqqu9kdof12nj][info][application] $_GET = [
+    'class_id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__utma' => '111872281.524911617.1555158495.1555262798.1555268573.5'
+    '__utmz' => '111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_identity-frontend' => 'a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"zOKsERzbKhUegmJWLGLorcvJ545uFKl9\",2592000]\";}'
+    'advanced-frontend' => 'k653m55e172o7cqqu9kdof12nj'
+    '_csrf-frontend' => '61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH\";}'
+    '__utmc' => '111872281'
+    '__utmb' => '111872281.5.10.1555268573'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/mercskyafrica/school/timetable?class_id=2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '__utma=111872281.524911617.1555158495.1555262798.1555268573.5; __utmz=111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _identity-frontend=a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22zOKsERzbKhUegmJWLGLorcvJ545uFKl9%22%2C2592000%5D%22%3B%7D; advanced-frontend=k653m55e172o7cqqu9kdof12nj; _csrf-frontend=61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH%22%3B%7D; __utmc=111872281; __utmb=111872281.5.10.1555268573; __utmt=1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '53808'
+    'REDIRECT_URL' => '/mercskyafrica/school/timetable'
+    'REDIRECT_QUERY_STRING' => 'class_id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'class_id=1'
+    'REQUEST_URI' => '/mercskyafrica/school/timetable?class_id=1'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1555269124.891
+    'REQUEST_TIME' => 1555269124
+]
+2019-04-14 21:13:06 [::1][1][k653m55e172o7cqqu9kdof12nj][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property 'subject' of non-object in C:\xampp\htdocs\mercskyafrica\frontend\modules\school\views\timetable\index.php:68
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\frontend\modules\school\views\timetable\index.php(68): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 68, Array)
+#1 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\modules\school\controllers\TimetableController))
+#4 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(frontend\modules\school\controllers\TimetableController))
+#5 C:\xampp\htdocs\mercskyafrica\frontend\modules\school\controllers\TimetableController.php(39): yii\base\Controller->render('index', Array)
+#6 [internal function]: frontend\modules\school\controllers\TimetableController->actionIndex('1')
+#7 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('school/timetabl...', Array)
+#11 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2019-04-14 21:13:06 [::1][1][k653m55e172o7cqqu9kdof12nj][info][application] $_GET = [
+    'class_id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__utma' => '111872281.524911617.1555158495.1555262798.1555268573.5'
+    '__utmz' => '111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_identity-frontend' => 'a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"zOKsERzbKhUegmJWLGLorcvJ545uFKl9\",2592000]\";}'
+    'advanced-frontend' => 'k653m55e172o7cqqu9kdof12nj'
+    '_csrf-frontend' => '61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH\";}'
+    '__utmc' => '111872281'
+    '__utmb' => '111872281.6.10.1555268573'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/mercskyafrica/school/timetable?class_id=2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '__utma=111872281.524911617.1555158495.1555262798.1555268573.5; __utmz=111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _identity-frontend=a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22zOKsERzbKhUegmJWLGLorcvJ545uFKl9%22%2C2592000%5D%22%3B%7D; advanced-frontend=k653m55e172o7cqqu9kdof12nj; _csrf-frontend=61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH%22%3B%7D; __utmc=111872281; __utmb=111872281.6.10.1555268573'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '54001'
+    'REDIRECT_URL' => '/mercskyafrica/school/timetable'
+    'REDIRECT_QUERY_STRING' => 'class_id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'class_id=1'
+    'REQUEST_URI' => '/mercskyafrica/school/timetable?class_id=1'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1555269185.942
+    'REQUEST_TIME' => 1555269185
+]
+2019-04-14 21:29:27 [::1][1][k653m55e172o7cqqu9kdof12nj][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: class_id in C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Controller.php:149
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#3 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('school/timetabl...', Array)
+#4 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2019-04-14 21:29:21 [::1][1][k653m55e172o7cqqu9kdof12nj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__utma' => '111872281.524911617.1555158495.1555262798.1555268573.5'
+    '__utmz' => '111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_identity-frontend' => 'a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"zOKsERzbKhUegmJWLGLorcvJ545uFKl9\",2592000]\";}'
+    'advanced-frontend' => 'k653m55e172o7cqqu9kdof12nj'
+    '_csrf-frontend' => '61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH\";}'
+    '__utmc' => '111872281'
+    '__utmb' => '111872281.10.10.1555268573'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/mercskyafrica/school/timetable?class_id=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '__utma=111872281.524911617.1555158495.1555262798.1555268573.5; __utmz=111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _identity-frontend=a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22zOKsERzbKhUegmJWLGLorcvJ545uFKl9%22%2C2592000%5D%22%3B%7D; advanced-frontend=k653m55e172o7cqqu9kdof12nj; _csrf-frontend=61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH%22%3B%7D; __utmc=111872281; __utmb=111872281.10.10.1555268573'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '57004'
+    'REDIRECT_URL' => '/mercskyafrica/school/timetable'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mercskyafrica/school/timetable'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1555270158.092
+    'REQUEST_TIME' => 1555270158
+]
+2019-04-14 21:29:29 [::1][1][k653m55e172o7cqqu9kdof12nj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: school/teacher/duty in C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('duty', Array)
+#1 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('school/teacher/...', Array)
+#2 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-04-14 21:29:26 [::1][1][k653m55e172o7cqqu9kdof12nj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__utma' => '111872281.524911617.1555158495.1555262798.1555268573.5'
+    '__utmz' => '111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_identity-frontend' => 'a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"zOKsERzbKhUegmJWLGLorcvJ545uFKl9\",2592000]\";}'
+    'advanced-frontend' => 'k653m55e172o7cqqu9kdof12nj'
+    '_csrf-frontend' => '61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH\";}'
+    '__utmc' => '111872281'
+    '__utmb' => '111872281.10.10.1555268573'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/mercskyafrica/school/timetable?class_id=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '__utma=111872281.524911617.1555158495.1555262798.1555268573.5; __utmz=111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _identity-frontend=a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22zOKsERzbKhUegmJWLGLorcvJ545uFKl9%22%2C2592000%5D%22%3B%7D; advanced-frontend=k653m55e172o7cqqu9kdof12nj; _csrf-frontend=61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH%22%3B%7D; __utmc=111872281; __utmb=111872281.10.10.1555268573'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '57029'
+    'REDIRECT_URL' => '/mercskyafrica/school/teacher/duty'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mercskyafrica/school/teacher/duty'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1555270166.865
+    'REQUEST_TIME' => 1555270166
+]
+2019-04-14 21:34:15 [::1][1][k653m55e172o7cqqu9kdof12nj][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Controller.php:149
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('duty', Array)
+#3 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('school/teacher/...', Array)
+#4 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2019-04-14 21:34:14 [::1][1][k653m55e172o7cqqu9kdof12nj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__utma' => '111872281.524911617.1555158495.1555262798.1555268573.5'
+    '__utmz' => '111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_identity-frontend' => 'a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"zOKsERzbKhUegmJWLGLorcvJ545uFKl9\",2592000]\";}'
+    'advanced-frontend' => 'k653m55e172o7cqqu9kdof12nj'
+    '_csrf-frontend' => '61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH\";}'
+    '__utmc' => '111872281'
+    '__utmb' => '111872281.11.10.1555268573'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/mercskyafrica/school/timetable?class_id=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '__utma=111872281.524911617.1555158495.1555262798.1555268573.5; __utmz=111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _identity-frontend=a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22zOKsERzbKhUegmJWLGLorcvJ545uFKl9%22%2C2592000%5D%22%3B%7D; advanced-frontend=k653m55e172o7cqqu9kdof12nj; _csrf-frontend=61b6ac5002c716de2a9477e647bf1d89a260960eb4b8d7e8f7a2dc8c74e15423a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22lchFlxCmTO1mY9Cnvkpy0IwzBNcvUrLH%22%3B%7D; __utmc=111872281; __utmb=111872281.11.10.1555268573; __utmt=1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '58050'
+    'REDIRECT_URL' => '/mercskyafrica/school/teacher/duty'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mercskyafrica/school/teacher/duty'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1555270454.591
+    'REQUEST_TIME' => 1555270454
+]
+2019-05-01 20:57:15 [::1][1][49hel6jsd9cpebh34k8fjm869g][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "duty-rota". in C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('duty-rota', Array)
+#1 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-05-01 20:57:09 [::1][1][49hel6jsd9cpebh34k8fjm869g][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__utma' => '111872281.524911617.1555158495.1555272845.1556707518.7'
+    '__utmz' => '111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__stripe_mid' => 'a6d7ba6e-2bc3-4f21-bc6f-af9ec8f2d0f9'
+    '_identity-frontend' => 'a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"zOKsERzbKhUegmJWLGLorcvJ545uFKl9\",2592000]\";}'
+    'advanced-frontend' => '49hel6jsd9cpebh34k8fjm869g'
+    '_csrf-frontend' => '5e34e77ba2aec54b7f1dc97c0e8b46e6a28a13c356a638a0be8cd56661242636a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"chxCXR8TRbpiiPgetjyn6IBMV_Jfm1Os\";}'
+    '__utmc' => '111872281'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '__utma=111872281.524911617.1555158495.1555272845.1556707518.7; __utmz=111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __stripe_mid=a6d7ba6e-2bc3-4f21-bc6f-af9ec8f2d0f9; _identity-frontend=a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22zOKsERzbKhUegmJWLGLorcvJ545uFKl9%22%2C2592000%5D%22%3B%7D; advanced-frontend=49hel6jsd9cpebh34k8fjm869g; _csrf-frontend=5e34e77ba2aec54b7f1dc97c0e8b46e6a28a13c356a638a0be8cd56661242636a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22chxCXR8TRbpiiPgetjyn6IBMV_Jfm1Os%22%3B%7D; __utmc=111872281'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '52348'
+    'REDIRECT_URL' => '/mercskyafrica/duty-rota'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mercskyafrica/duty-rota'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1556737025.86
+    'REQUEST_TIME' => 1556737025
+]
+2019-05-01 21:33:53 [::1][1][49hel6jsd9cpebh34k8fjm869g][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\AcademicSessions::session in C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('session')
+#1 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('session')
+#2 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(580): yii\helpers\BaseArrayHelper::getValue(Object(common\models\AcademicSessions), 'session')
+#3 C:\xampp\htdocs\mercskyafrica\frontend\modules\school\views\duty-rota\_form.php(24): yii\helpers\BaseArrayHelper::map(Array, 'session_id', 'session')
+#4 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#7 C:\xampp\htdocs\mercskyafrica\frontend\modules\school\views\duty-rota\create.php(14): yii\base\View->render('_form', Array)
+#8 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\View.php(212): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\modules\school\controllers\DutyRotaController))
+#11 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Controller.php(49): yii\web\View->renderAjax('create', Array, Object(frontend\modules\school\controllers\DutyRotaController))
+#12 C:\xampp\htdocs\mercskyafrica\frontend\modules\school\controllers\DutyRotaController.php(71): yii\web\Controller->renderAjax('create', Array)
+#13 [internal function]: frontend\modules\school\controllers\DutyRotaController->actionCreate()
+#14 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#17 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('school/duty-rot...', Array)
+#18 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#20 {main}
+2019-05-01 21:33:53 [::1][1][49hel6jsd9cpebh34k8fjm869g][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__utma' => '111872281.524911617.1555158495.1556707518.1556737040.8'
+    '__utmz' => '111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__stripe_mid' => 'a6d7ba6e-2bc3-4f21-bc6f-af9ec8f2d0f9'
+    '_identity-frontend' => 'a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"zOKsERzbKhUegmJWLGLorcvJ545uFKl9\",2592000]\";}'
+    'advanced-frontend' => '49hel6jsd9cpebh34k8fjm869g'
+    '_csrf-frontend' => '5e34e77ba2aec54b7f1dc97c0e8b46e6a28a13c356a638a0be8cd56661242636a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"chxCXR8TRbpiiPgetjyn6IBMV_Jfm1Os\";}'
+    '__utmc' => '111872281'
+    '__utmb' => '111872281.14.10.1556737040'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/mercskyafrica/school/duty-rota'
+    'HTTP_X_CSRF_TOKEN' => 'EKcH9IyrucBXw6lGSjAtx2TGdFQH1JoIyaukCQErVA9zz3-31PmBlAWh2S8jYEqiEKwNOjGd2EWf9O5vbBobfA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '__utma=111872281.524911617.1555158495.1556707518.1556737040.8; __utmz=111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __stripe_mid=a6d7ba6e-2bc3-4f21-bc6f-af9ec8f2d0f9; _identity-frontend=a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22zOKsERzbKhUegmJWLGLorcvJ545uFKl9%22%2C2592000%5D%22%3B%7D; advanced-frontend=49hel6jsd9cpebh34k8fjm869g; _csrf-frontend=5e34e77ba2aec54b7f1dc97c0e8b46e6a28a13c356a638a0be8cd56661242636a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22chxCXR8TRbpiiPgetjyn6IBMV_Jfm1Os%22%3B%7D; __utmc=111872281; __utmb=111872281.14.10.1556737040; __utmt=1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '52955'
+    'REDIRECT_URL' => '/mercskyafrica/school/duty-rota/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mercskyafrica/school/duty-rota/create'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1556739233.114
+    'REQUEST_TIME' => 1556739233
+]
+2019-05-01 21:33:57 [::1][1][49hel6jsd9cpebh34k8fjm869g][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\AcademicSessions::session in C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('session')
+#1 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('session')
+#2 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(580): yii\helpers\BaseArrayHelper::getValue(Object(common\models\AcademicSessions), 'session')
+#3 C:\xampp\htdocs\mercskyafrica\frontend\modules\school\views\duty-rota\_form.php(24): yii\helpers\BaseArrayHelper::map(Array, 'session_id', 'session')
+#4 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#7 C:\xampp\htdocs\mercskyafrica\frontend\modules\school\views\duty-rota\create.php(14): yii\base\View->render('_form', Array)
+#8 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\View.php(212): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\modules\school\controllers\DutyRotaController))
+#11 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Controller.php(49): yii\web\View->renderAjax('create', Array, Object(frontend\modules\school\controllers\DutyRotaController))
+#12 C:\xampp\htdocs\mercskyafrica\frontend\modules\school\controllers\DutyRotaController.php(71): yii\web\Controller->renderAjax('create', Array)
+#13 [internal function]: frontend\modules\school\controllers\DutyRotaController->actionCreate()
+#14 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#17 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('school/duty-rot...', Array)
+#18 C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\mercskyafrica\frontend\web\index.php(17): yii\base\Application->run()
+#20 {main}
+2019-05-01 21:33:57 [::1][1][49hel6jsd9cpebh34k8fjm869g][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__utma' => '111872281.524911617.1555158495.1556707518.1556737040.8'
+    '__utmz' => '111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__stripe_mid' => 'a6d7ba6e-2bc3-4f21-bc6f-af9ec8f2d0f9'
+    '_identity-frontend' => 'a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"zOKsERzbKhUegmJWLGLorcvJ545uFKl9\",2592000]\";}'
+    'advanced-frontend' => '49hel6jsd9cpebh34k8fjm869g'
+    '_csrf-frontend' => '5e34e77ba2aec54b7f1dc97c0e8b46e6a28a13c356a638a0be8cd56661242636a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"chxCXR8TRbpiiPgetjyn6IBMV_Jfm1Os\";}'
+    '__utmc' => '111872281'
+    '__utmb' => '111872281.14.10.1556737040'
+    '__utmt' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/mercskyafrica/school/duty-rota'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '__utma=111872281.524911617.1555158495.1556707518.1556737040.8; __utmz=111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __stripe_mid=a6d7ba6e-2bc3-4f21-bc6f-af9ec8f2d0f9; _identity-frontend=a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22zOKsERzbKhUegmJWLGLorcvJ545uFKl9%22%2C2592000%5D%22%3B%7D; advanced-frontend=49hel6jsd9cpebh34k8fjm869g; _csrf-frontend=5e34e77ba2aec54b7f1dc97c0e8b46e6a28a13c356a638a0be8cd56661242636a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22chxCXR8TRbpiiPgetjyn6IBMV_Jfm1Os%22%3B%7D; __utmc=111872281; __utmb=111872281.14.10.1556737040; __utmt=1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '52962'
+    'REDIRECT_URL' => '/mercskyafrica/school/duty-rota/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mercskyafrica/school/duty-rota/create'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1556739236.937
+    'REQUEST_TIME' => 1556739236
+]
+2019-05-02 20:54:53 [::1][1][49hel6jsd9cpebh34k8fjm869g][error][yii\base\ErrorException:1] yii\base\ErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\mercskyafrica\vendor\yiisoft\yii2\helpers\BaseFileHelper.php:336
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-05-02 20:54:23 [::1][1][49hel6jsd9cpebh34k8fjm869g][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__utma' => '111872281.524911617.1555158495.1556707518.1556737040.8'
+    '__utmz' => '111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '__stripe_mid' => 'a6d7ba6e-2bc3-4f21-bc6f-af9ec8f2d0f9'
+    '_identity-frontend' => 'a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"zOKsERzbKhUegmJWLGLorcvJ545uFKl9\",2592000]\";}'
+    'advanced-frontend' => '49hel6jsd9cpebh34k8fjm869g'
+    '_csrf-frontend' => '5e34e77ba2aec54b7f1dc97c0e8b46e6a28a13c356a638a0be8cd56661242636a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"chxCXR8TRbpiiPgetjyn6IBMV_Jfm1Os\";}'
+    '__utmc' => '111872281'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '__utma=111872281.524911617.1555158495.1556707518.1556737040.8; __utmz=111872281.1555158495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __stripe_mid=a6d7ba6e-2bc3-4f21-bc6f-af9ec8f2d0f9; _identity-frontend=a379cd8fb5bbb008448ec55f93f027ff5c284999f1a67c7e0b76d8df49aababaa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22zOKsERzbKhUegmJWLGLorcvJ545uFKl9%22%2C2592000%5D%22%3B%7D; advanced-frontend=49hel6jsd9cpebh34k8fjm869g; _csrf-frontend=5e34e77ba2aec54b7f1dc97c0e8b46e6a28a13c356a638a0be8cd56661242636a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22chxCXR8TRbpiiPgetjyn6IBMV_Jfm1Os%22%3B%7D; __utmc=111872281'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win64) OpenSSL/1.1.1b PHP/7.3.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mercskyafrica/frontend/web/index.php'
+    'REMOTE_PORT' => '57126'
+    'REDIRECT_URL' => '/mercskyafrica/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mercskyafrica/'
+    'SCRIPT_NAME' => '/mercskyafrica/frontend/web/index.php'
+    'PHP_SELF' => '/mercskyafrica/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1556823263.622
+    'REQUEST_TIME' => 1556823263
+]

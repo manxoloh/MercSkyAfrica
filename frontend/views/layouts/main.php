@@ -42,7 +42,7 @@ AppAsset::register($this);
                         <img src="<?= Yii::$app->request->baseUrl; ?>theme/img/default-avatar.png" />
                     </div>
                     <div class="info ">
-                        <span>Solomon Maithya</span>
+                        <span><?= Yii::$app->user->identity->username ?></span>
                     </div>
                 </div>
                 <ul class="nav">
@@ -92,15 +92,32 @@ AppAsset::register($this);
                                 Finance
                             </p>
                         </a>
-                    </li>   
+                    </li> 
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= Url::to(['/school/teacher']) ?>">
+                        <a class="nav-link" data-toggle="collapse" href="#teachers">
                             <i class="nc-icon nc-single-02"></i>
                             <p>
                                 Teachers
+                                <b class="caret"></b>
                             </p>
                         </a>
-                    </li> 
+                        <div class="collapse " id="teachers">
+                            <ul class="nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="<?= Url::to(['/school/teacher']) ?>">
+                                        <span class="sidebar-mini">T</span>
+                                        <span class="sidebar-normal">Teachers</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="<?= Url::to(['/school/duty-rota']) ?>">
+                                        <span class="sidebar-mini">T</span>
+                                        <span class="sidebar-normal">TOD's</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>  
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#attendance">
                             <i class="nc-icon nc-settings-90"></i>
@@ -127,13 +144,13 @@ AppAsset::register($this);
                         </div>
                     </li> 
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= Url::to(['/communications/messages']) ?>">
-                            <i class="nc-icon nc-chat-round"></i>
+                        <a class="nav-link" href="<?= Url::to(['/school/timetable']) ?>">
+                            <i class="nc-icon nc-single-copy-04"></i>
                             <p>
-                                Messages
+                                Timetable
                             </p>
                         </a>
-                    </li>                
+                    </li>                 
                     <li class="nav-item ">
                         <a class="nav-link" href="<?= Url::to(['/business/contacts']) ?>">
                             <i class="nc-icon nc-bag"></i>

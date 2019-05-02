@@ -41,6 +41,9 @@ class ClassesController extends Controller
         ]);
     }
 
+    public function actionTimetable(){
+        return $this->render('timetable');
+    }
     /**
      * Displays a single Classes model.
      * @param integer $id

@@ -500,10 +500,6 @@ class AssetManager extends Component
             }
         }
 
-        if ($this->appendTimestamp && ($timestamp = @filemtime($dstFile)) > 0) {
-            $fileName = $fileName . "?v=$timestamp";
-        }
-
         return [$dstFile, $this->baseUrl . "/$dir/$fileName"];
     }
 

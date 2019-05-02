@@ -503,7 +503,7 @@ EOD;
         $buffer = [];
         $pendingParenthesisCount = 0;
 
-        foreach ($tokens as $tokenIndex => $token) {
+        foreach ($tokens as $i => $token) {
             // finding out translator call
             if ($matchedTokensCount < $translatorTokensCount) {
                 if ($this->tokensEqual($token, $translatorTokens[$matchedTokensCount])) {
@@ -558,18 +558,11 @@ EOD;
                     }
                 } elseif ($this->tokensEqual('(', $token)) {
                     // count beginning of function call, skipping translator beginning
-
-                    // If we are not yet inside the translator, make sure that it's beginning of the real translator.
-                    // See https://github.com/yiisoft/yii2/issues/16828
-                    if ($pendingParenthesisCount === 0) {
-                        $previousTokenIndex = $tokenIndex - $matchedTokensCount - 1;
-                        if (is_array($tokens[$previousTokenIndex])) {
-                            $previousToken = $tokens[$previousTokenIndex][0];
-                            if (in_array($previousToken, [T_OBJECT_OPERATOR, T_PAAMAYIM_NEKUDOTAYIM], true)) {
-                                $matchedTokensCount = 0;
-                                continue;
-                            }
-                        }
+                    // Ensure that it's not the call of the object method. See https://github.com/yiisoft/yii2/issues/16828
+                    $previousTokenId = $tokens[$i - $matchedTokensCount - 1][0];
+                    if (in_array($previousTokenId, [T_OBJECT_OPERATOR, T_PAAMAYIM_NEKUDOTAYIM], true)) {
+                        $matchedTokensCount = 0;
+                        continue;
                     }
 
                     if ($pendingParenthesisCount > 0) {

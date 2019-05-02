@@ -763,11 +763,6 @@ class ActiveField extends Component
      */
     public function widget($class, $config = [])
     {
-        foreach ($this->inputOptions as $key => $value) {
-            if (!isset($config['options'][$key])) {
-                $config['options'][$key] = $value;
-            }
-        }
         /* @var $class \yii\base\Widget */
         $config['model'] = $this->model;
         $config['attribute'] = $this->attribute;
