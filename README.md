@@ -20,13 +20,13 @@ FEATURES
 ```
 Modules
 	Dashboard
-Admissions
-Examination
-Finance
-Teachers
-Attendance
-Timetable
-Communications
-Administration
-Settings    
+	Admissions
+	Examination
+	Finance
+	Teachers
+	Attendance
+	Timetable
+	Communications
+	Administration
+	Settings    
 ```
