@@ -9,6 +9,7 @@ use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yii\helpers\Url;
 use common\models\LoginForm;
+use common\models\Subscriptions;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
@@ -29,13 +30,13 @@ class SiteController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout', 'signup'],
+                'only' => ['logout'],
                 'rules' => [
-                    [
-                        'actions' => ['signup'],
-                        'allow' => true,
-                        'roles' => ['?'],
-                    ],
+//                     [
+//                         'actions' => ['signup'],
+//                         'allow' => true,
+//                         'roles' => ['?'],
+//                     ],
                     [
                         'actions' => ['logout'],
                         'allow' => true,
@@ -76,6 +77,13 @@ class SiteController extends Controller
     public function actionIndex()
     {
         if (!Yii::$app->user->isGuest) {
+            if (Yii::$app->user->identity->user_type != "Superadmin"){
+                $check = Subscriptions::find()->where(['owner'=>Yii::$app->user->identity->id])->sum('remaining_sms');
+                if ($check<1) {
+                    $this->layout = "signup";
+                    return $this->render('subscriptions');
+                }
+            }
             $events = [];
             $times = EventsCalendar::find()->all();
             foreach ($times AS $time){
@@ -192,10 +200,14 @@ class SiteController extends Controller
      */
     public function actionSignup()
     {
+        if(!Yii::$app->getUser()->isGuest){
+            return $this->redirect(['index']);
+        }
         $this->layout = "signup";
         $model = new SignupForm();
         if ($model->load(Yii::$app->request->post())) {
-            if ($user = $model->signup()) {
+            $user = $model->signup();
+            if ($user) {
                 if (Yii::$app->getUser()->login($user)) {
                     return $this->redirect(['login']);
                 }
@@ -214,6 +226,7 @@ class SiteController extends Controller
      */
     public function actionRequestPasswordReset()
     {
+        $this->layout = "signup";
         $model = new PasswordResetRequestForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail()) {
@@ -239,6 +252,7 @@ class SiteController extends Controller
      */
     public function actionResetPassword($token)
     {
+        $this->layout = "signup";
         try {
             $model = new ResetPasswordForm($token);
         } catch (InvalidArgumentException $e) {

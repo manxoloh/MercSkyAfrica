@@ -61,5 +61,8 @@ return [
             'class' => 'frontend\modules\business\Module',
         ],
     ],
+    'as beforeRequest'=>[
+        'class'=>'common\components\AccessBehavior',
+    ],
     'params' => $params,
 ];

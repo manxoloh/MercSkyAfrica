@@ -35,11 +35,9 @@ class SignupForm extends Model
             ['firstname', 'string', 'min' => 2, 'max' => 255],
             
             ['lastname', 'trim'],
-            ['lastname', 'required'],
             ['lastname', 'string', 'min' => 2, 'max' => 255],
             
             ['username', 'trim'],
-            ['username', 'required'],
             ['username', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This username has already been taken.'],
             ['username', 'string', 'min' => 2, 'max' => 255],
 
@@ -65,11 +63,7 @@ class SignupForm extends Model
      * @return User|null the saved model or null if saving fails
      */
     public function signup()
-    {
-        if (!$this->validate()) {
-            return null;
-        }
-        
+    {        
         $user = new User();
         $user->user_type = "Organization";
         $user->organization = $this->organization;
